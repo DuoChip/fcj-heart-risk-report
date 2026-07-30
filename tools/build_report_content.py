@@ -48,15 +48,15 @@ home_en = f"""
 
 | Field | Value |
 |---|---|
-| Full name | TODO: Enter full name |
-| Phone number | TODO: Enter phone number |
-| Email | TODO: Enter email |
-| University | TODO: Enter university |
-| Major | TODO: Enter major |
-| FCAJ class | TODO: Enter FCAJ class |
-| Internship company | TODO: Enter internship company |
-| Internship position | TODO: Enter internship position |
-| Internship duration | TODO: Enter verified dates |
+| Full name | Phạm Đình Được |
+| Phone number | 036 499 8870 |
+| Email | duoc7090@gmail.com<br>duoc.phamdinh2510@hcmut.edu.vn |
+| University | Ho Chi Minh City University of Technology – Vietnam National University Ho Chi Minh City (HCMUT–VNUHCM) |
+| Major | Computer Science |
+| FCAJ class | FCAJ – BKU – 2026 |
+| Internship company | First Cloud AI Journey |
+| Internship position | Data Engineer |
+| Internship duration | 15 June 2026 – 15 August 2026 |
 
 ## Project
 
@@ -83,15 +83,15 @@ home_vi = f"""
 
 | Trường thông tin | Giá trị |
 |---|---|
-| Họ và tên | TODO: Nhập họ và tên |
-| Số điện thoại | TODO: Nhập số điện thoại |
-| Email | TODO: Nhập email |
-| Trường | TODO: Nhập tên trường |
-| Chuyên ngành | TODO: Nhập chuyên ngành |
-| Lớp FCAJ | TODO: Nhập lớp FCAJ |
-| Công ty thực tập | TODO: Nhập công ty thực tập |
-| Vị trí thực tập | TODO: Nhập vị trí thực tập |
-| Thời gian thực tập | TODO: Nhập thời gian đã xác minh |
+| Họ và tên | Phạm Đình Được |
+| Số điện thoại | 036 499 8870 |
+| Email | duoc7090@gmail.com<br>duoc.phamdinh2510@hcmut.edu.vn |
+| Trường | Trường Đại học Bách khoa – Đại học Quốc gia Thành phố Hồ Chí Minh (HCMUT–ĐHQG-HCM) |
+| Chuyên ngành | Khoa học Máy tính |
+| Lớp FCAJ | FCAJ – BKU – 2026 |
+| Công ty thực tập | First Cloud AI Journey |
+| Vị trí thực tập | Data Engineer |
+| Thời gian thực tập | 15/06/2026 – 15/08/2026 |
 
 ## Dự án
 
@@ -468,56 +468,89 @@ Dataset phi lâm sàng; chưa đánh giá fairness hay calibration xác suất. 
 pair(CONTENT / "2-Proposal", "Proposal", "Đề xuất dự án", 2, "2.", proposal_en, proposal_vi)
 
 
-pair(CONTENT / "3-BlogsPosted", "Blog drafts", "Bản nháp blog", 3, "3.",
-"""# Blog drafts
+pair(CONTENT / "3-BlogsPosted", "Blogs Posted", "Blog đã đăng", 3, "3.",
+"""Two articles have verified Facebook post URLs in **AWS Study Group VN**; the third remains a draft.
 
-Three project-specific bilingual drafts are prepared below. They are **not claimed as published**.
+| Article | Status |
+|---|---|
+| AWS Lambda cost and performance optimization | Published/shared — URL verified |
+| Amazon SageMaker cost optimization | Published/shared — URL verified |
+| Custom Data Drift Monitoring | Draft |
 
-- TODO: Add verified AWS Study Group publication URLs
-- TODO: Add publication dates and screenshots""",
-"""# Bản nháp blog
+The supplied Facebook exports and screenshots identify Nguyễn Châu on the posts and tag Phạm Đình Được. Publication dates remain TODO because the evidence only displays “Yesterday,” not a reliable calendar date.""",
+"""Hai bài viết đã có URL Facebook được xác minh trong **AWS Study Group VN**; bài thứ ba vẫn là bản nháp.
 
-Ba bản nháp song ngữ theo dự án được chuẩn bị bên dưới. Báo cáo **không tuyên bố đã xuất bản**.
+| Bài viết | Trạng thái |
+|---|---|
+| Tối ưu chi phí và hiệu năng AWS Lambda | Đã đăng/chia sẻ — URL đã xác minh |
+| Tối ưu chi phí Amazon SageMaker | Đã đăng/chia sẻ — URL đã xác minh |
+| Custom Data Drift Monitoring | Bản nháp |
 
-- TODO: Thêm URL AWS Study Group đã xác minh
-- TODO: Thêm ngày xuất bản và ảnh minh chứng""")
+Bản text và ảnh Facebook hiển thị Nguyễn Châu trên bài viết và gắn thẻ Phạm Đình Được. Ngày đăng vẫn là TODO vì minh chứng chỉ hiển thị “Hôm qua”, không phải ngày lịch đáng tin cậy.""")
 
 blogs = [
-("Cost Optimization for a Personal SageMaker MLOps Project", "Tối ưu chi phí cho dự án MLOps cá nhân trên SageMaker",
- "Continuously running endpoints differ from processing and training jobs that stop when work ends. The PoC therefore used three sequential HPO trials, one endpoint instance, Budget alerts, tags, and a cleanup runbook.",
- "Endpoint chạy liên tục khác với Processing/Training Job kết thúc sau công việc. PoC vì vậy giới hạn ba HPO trial tuần tự, một endpoint, Budget alert, tags và runbook cleanup.",
- "List active endpoints before deletion:\n\n```bash\naws sagemaker list-endpoints --region \"$AWS_REGION\" --status-equals InService\n```\n\nRetain reports and sanitized evidence before deleting compute. Keep the S3 bucket private and never embed credentials.",
- "Liệt kê endpoint đang chạy trước khi xóa:\n\n```bash\naws sagemaker list-endpoints --region \"$AWS_REGION\" --status-equals InService\n```\n\nGiữ report và minh chứng đã che thông tin trước khi xóa compute. Giữ S3 private và không nhúng credential."),
-("Model Registry and Quality Gates in SageMaker Pipelines", "Model Registry và Quality Gate trong SageMaker Pipeline",
- "Model versions separate trained artifacts from promotion decisions. Versions 1 and 2 were Approved; version 2 was deployed; the Pipeline created version 3 as PendingManualApproval.",
- "Model version tách artifact đã train khỏi quyết định promotion. Version 1 và 2 Approved; version 2 được deploy; Pipeline tạo version 3 PendingManualApproval.",
- "The `ConditionStep` checks AUC ≥ 0.84, F1 ≥ 0.70, and recall ≥ 0.65. The pass branch registers; the fail branch raises `MetricThresholdFailed`. An intentional AUC threshold of 0.99 verified that registration is blocked. Auto-deployment is excluded so a person reviews evidence and cost.",
- "`ConditionStep` kiểm tra AUC ≥ 0,84, F1 ≥ 0,70 và recall ≥ 0,65. Nhánh pass đăng ký; nhánh fail tạo `MetricThresholdFailed`. Ngưỡng AUC 0,99 có chủ đích xác minh việc chặn đăng ký. Không auto-deploy để người phụ trách rà soát minh chứng và chi phí."),
+("AWS Lambda: Cost and Performance Optimization", "AWS Lambda: Tối ưu chi phí và hiệu năng",
+ "The published article explains when Lambda fits event-driven, spiky, and scheduled workloads and when long-running, stateful, or ultra-low-latency workloads need another service.",
+ "Bài đã đăng phân tích khi Lambda phù hợp với event-driven, spiky traffic, scheduled job và khi workload chạy dài, stateful hoặc ultra-low-latency cần dịch vụ khác.",
+ "It covers execution-environment reuse, memory tuning, cold starts, package size and Layers, RDS Proxy, X-Ray/CloudWatch, dead-letter queues, and concurrency limits. These practices support the lightweight `heart-risk-api` wrapper.",
+ "Bài viết đề cập execution-environment reuse, memory tuning, cold start, package/Layer, RDS Proxy, X-Ray/CloudWatch, dead-letter queue và concurrency limit; các điểm này hỗ trợ wrapper `heart-risk-api`.",
+ "https://www.facebook.com/groups/660548818043427/?multi_permalinks=2227143931383900&hoisted_section_header_type=recently_seen"),
+("Amazon SageMaker: AI/ML and Cost Optimization", "Amazon SageMaker: AI/ML và tối ưu chi phí",
+ "The published article presents SageMaker as Studio, managed Training Jobs, and inference hosting—not only a cloud notebook.",
+ "Bài đã đăng trình bày SageMaker gồm Studio, managed Training Job và inference hosting, không chỉ là notebook cloud.",
+ "It covers Managed Spot Training, bounded HPO, instance selection, endpoint cost, Auto Scaling, Serverless Inference, model optimization, Pipelines, and Model Registry. The heart-risk PoC applies bounded HPO, one endpoint, manual approval, quality gates, Budget alerts, and cleanup.",
+ "Bài viết đề cập Managed Spot Training, HPO có giới hạn, chọn instance, endpoint cost, Auto Scaling, Serverless Inference, model optimization, Pipelines và Model Registry. Heart-risk PoC áp dụng ba HPO trial, một endpoint, manual approval, quality gate, Budget alert và cleanup.",
+ "https://www.facebook.com/groups/awsstudygroupfcj/posts/2227364341361859/?notif_id=1785325679108331&notif_t=tagged_with_story&ref=notif"),
 ("Custom Data Drift Monitoring with SageMaker Processing and CloudWatch", "Giám sát Data Drift tùy chỉnh bằng SageMaker Processing và CloudWatch",
  "Data Capture provides current inference records, while the 4,900-row training baseline anchors comparison. The expected official feature metric was not observed, so the project implemented a transparent fallback.",
  "Data Capture cung cấp record suy luận hiện tại, còn baseline 4.900 dòng từ train làm mốc. Không quan sát thấy official feature metric nên dự án tạo fallback minh bạch.",
  "A custom Processing Job checked 20 features: numeric standardized mean shift > 0.5 and categorical total variation distance > 0.20. Six features drifted. It published `DriftDetected=1` and `DataQualityViolationCount=6`; `TreatMissingData=ignore` prevented sparse batch periods from overwriting the useful state. These are PoC rules, not universal or clinical thresholds.",
- "Custom Processing Job kiểm tra 20 feature: standardized mean shift numeric > 0,5 và total variation distance categorical > 0,20. Sáu feature drift. Job publish `DriftDetected=1`, `DataQualityViolationCount=6`; `TreatMissingData=ignore` tránh period batch thưa làm sai trạng thái hữu ích. Đây là quy tắc PoC, không phải ngưỡng phổ quát hay lâm sàng.")
+ "Custom Processing Job kiểm tra 20 feature: standardized mean shift numeric > 0,5 và total variation distance categorical > 0,20. Sáu feature drift. Job publish `DriftDetected=1`, `DataQualityViolationCount=6`; `TreatMissingData=ignore` tránh period batch thưa làm sai trạng thái hữu ích. Đây là quy tắc PoC, không phải ngưỡng phổ quát hay lâm sàng.",
+ None)
 ]
-for i, (et, vt, introe, introv, impl_e, impl_v) in enumerate(blogs, 1):
-    common_end_en = """## Result and lessons
+for i, (et, vt, introe, introv, impl_e, impl_v, url) in enumerate(blogs, 1):
+    if url:
+        en_image = f"../../images/evidence/blogs/blog{i}-facebook-post.png"
+        vi_image = f"../../../images/evidence/blogs/blog{i}-facebook-post.png"
+        status_en = f"""- **Status:** Published/shared in AWS Study Group VN
+- **Facebook post:** [Open published article]({url})
+- **Attribution evidence:** supplied export identifies Nguyễn Châu and tags Phạm Đình Được
+- **Publication date:** TODO: Add verified publication date
+
+<figure class="evidence">
+  <img src="{en_image}" alt="Facebook evidence for published blog {i}" loading="lazy">
+  <figcaption>Published article evidence — <code>blog{i}-facebook-post.png</code></figcaption>
+</figure>
+
+**Evidence meaning:** the screenshot corroborates publication and the tag for Phạm Đình Được. The relative “Yesterday” label is not treated as a verified date."""
+        status_vi = f"""- **Trạng thái:** Đã đăng/chia sẻ trong AWS Study Group VN
+- **Bài Facebook:** [Mở bài viết đã đăng]({url})
+- **Minh chứng attribution:** bản text hiển thị Nguyễn Châu và gắn thẻ Phạm Đình Được
+- **Ngày đăng:** TODO: Bổ sung ngày đăng đã xác minh
+
+<figure class="evidence">
+  <img src="{vi_image}" alt="Minh chứng Facebook cho blog {i} đã đăng" loading="lazy">
+  <figcaption>Minh chứng bài đã đăng — <code>blog{i}-facebook-post.png</code></figcaption>
+</figure>
+
+**Ý nghĩa minh chứng:** ảnh xác nhận bài đã đăng và Phạm Đình Được được gắn thẻ. Nhãn “Hôm qua” không được dùng làm ngày đã xác minh."""
+    else:
+        status_en = "- **Status:** Draft — no publication claim or URL"
+        status_vi = "- **Trạng thái:** Bản nháp — chưa tuyên bố xuất bản và chưa có URL"
+    common_end_en = f"""## Result and lessons
 
 The implementation favors measurable evidence, explicit failure behavior, and cost-aware operation. IAM roles replace hard-coded keys; active URLs and sensitive ARNs must be masked.
 
 ## Publication status
 
-- TODO: AWS Study Group publication URL
-- TODO: Publication date
-- TODO: Publication screenshot"""
-    common_end_vi = """## Kết quả và bài học
+{status_en}"""
+    common_end_vi = f"""## Kết quả và bài học
 
 Giải pháp ưu tiên minh chứng đo được, hành vi lỗi rõ ràng và vận hành có ý thức chi phí. IAM role thay access key hard-code; cần che URL đang active và ARN nhạy cảm.
 
 ## Trạng thái xuất bản
 
-- TODO: URL bài AWS Study Group
-- TODO: Ngày xuất bản
-- TODO: Ảnh minh chứng xuất bản"""
+{status_vi}"""
     en = f"# {et}\n\n## Introduction and motivation\n\n{introe}\n\n## Flow and implementation\n\n{impl_e}\n\n{common_end_en}"
     vi = f"# {vt}\n\n## Giới thiệu và động lực\n\n{introv}\n\n## Luồng và hiện thực\n\n{impl_v}\n\n{common_end_vi}"
     pair(CONTENT / "3-BlogsPosted" / f"3.{i}-Blog{i}", et, vt, i, f"3.{i}.", en, vi)
@@ -1693,10 +1726,13 @@ Published site: <https://duochip.github.io/fcj-heart-risk-report/>
 
 ```bash
 git submodule update --init --recursive
-hugo server -D
+hugo server -D --renderToMemory
 ```
 
 Open <http://localhost:1313/>.
+
+`--renderToMemory` isolates the live preview from files in `public/`, preventing
+a separate production or static build from changing local language-switch URLs.
 
 Build the production site:
 
@@ -1711,6 +1747,8 @@ python3 -m http.server 8080 --directory public
 ```
 
 Then open <http://localhost:8080/>.
+
+Stop the Hugo development server before using this static-preview workflow.
 
 ## Deployment
 

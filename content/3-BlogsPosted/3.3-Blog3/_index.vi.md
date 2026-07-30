@@ -19,6 +19,4 @@ Giải pháp ưu tiên minh chứng đo được, hành vi lỗi rõ ràng và v
 
 ## Trạng thái xuất bản
 
-- TODO: URL bài AWS Study Group
-- TODO: Ngày xuất bản
-- TODO: Ảnh minh chứng xuất bản
+- **Trạng thái:** Bản nháp — chưa tuyên bố xuất bản và chưa có URL

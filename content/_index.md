@@ -11,15 +11,15 @@ pre: " <b></b> "
 
 | Field | Value |
 |---|---|
-| Full name | TODO: Enter full name |
-| Phone number | TODO: Enter phone number |
-| Email | TODO: Enter email |
-| University | TODO: Enter university |
-| Major | TODO: Enter major |
-| FCAJ class | TODO: Enter FCAJ class |
-| Internship company | TODO: Enter internship company |
-| Internship position | TODO: Enter internship position |
-| Internship duration | TODO: Enter verified dates |
+| Full name | Phạm Đình Được |
+| Phone number | 036 499 8870 |
+| Email | duoc7090@gmail.com<br>duoc.phamdinh2510@hcmut.edu.vn |
+| University | Ho Chi Minh City University of Technology – Vietnam National University Ho Chi Minh City (HCMUT–VNUHCM) |
+| Major | Computer Science |
+| FCAJ class | FCAJ – BKU – 2026 |
+| Internship company | First Cloud AI Journey |
+| Internship position | Data Engineer |
+| Internship duration | 15 June 2026 – 15 August 2026 |
 
 ## Project
 

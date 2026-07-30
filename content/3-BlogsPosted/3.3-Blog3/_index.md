@@ -19,6 +19,4 @@ The implementation favors measurable evidence, explicit failure behavior, and co
 
 ## Publication status
 
-- TODO: AWS Study Group publication URL
-- TODO: Publication date
-- TODO: Publication screenshot
+- **Status:** Draft — no publication claim or URL

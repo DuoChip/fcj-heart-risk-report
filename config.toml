@@ -20,7 +20,7 @@ home = [ "HTML", "RSS", "JSON"]
   # GitHub source link used by the theme's "Edit this page" action.
   editURL = "https://github.com/DuoChip/fcj-heart-risk-report/edit/main/content/"
   description = "Bilingual FCAJ internship report and AWS SageMaker Heart Risk MLOps workshop"
-  author = "TODO: Enter author name and email"
+  author = "Phạm Đình Được <duoc7090@gmail.com>"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false

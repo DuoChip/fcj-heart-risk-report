@@ -15,10 +15,13 @@ Published site: <https://duochip.github.io/fcj-heart-risk-report/>
 
 ```bash
 git submodule update --init --recursive
-hugo server -D
+hugo server -D --renderToMemory
 ```
 
 Open <http://localhost:1313/>.
+
+`--renderToMemory` isolates the live preview from files in `public/`, preventing
+a separate production or static build from changing local language-switch URLs.
 
 Build the production site:
 
@@ -33,6 +36,8 @@ python3 -m http.server 8080 --directory public
 ```
 
 Then open <http://localhost:8080/>.
+
+Stop the Hugo development server before using this static-preview workflow.
 
 ## Deployment
 

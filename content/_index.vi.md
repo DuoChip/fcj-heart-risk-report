@@ -11,15 +11,15 @@ pre: " <b></b> "
 
 | Trường thông tin | Giá trị |
 |---|---|
-| Họ và tên | TODO: Nhập họ và tên |
-| Số điện thoại | TODO: Nhập số điện thoại |
-| Email | TODO: Nhập email |
-| Trường | TODO: Nhập tên trường |
-| Chuyên ngành | TODO: Nhập chuyên ngành |
-| Lớp FCAJ | TODO: Nhập lớp FCAJ |
-| Công ty thực tập | TODO: Nhập công ty thực tập |
-| Vị trí thực tập | TODO: Nhập vị trí thực tập |
-| Thời gian thực tập | TODO: Nhập thời gian đã xác minh |
+| Họ và tên | Phạm Đình Được |
+| Số điện thoại | 036 499 8870 |
+| Email | duoc7090@gmail.com<br>duoc.phamdinh2510@hcmut.edu.vn |
+| Trường | Trường Đại học Bách khoa – Đại học Quốc gia Thành phố Hồ Chí Minh (HCMUT–ĐHQG-HCM) |
+| Chuyên ngành | Khoa học Máy tính |
+| Lớp FCAJ | FCAJ – BKU – 2026 |
+| Công ty thực tập | First Cloud AI Journey |
+| Vị trí thực tập | Data Engineer |
+| Thời gian thực tập | 15/06/2026 – 15/08/2026 |
 
 ## Dự án
 
