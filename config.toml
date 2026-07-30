@@ -1,4 +1,4 @@
-baseURL = "https://TODO.github.io/TODO/"
+baseURL = "https://duochip.github.io/fcj-heart-risk-report/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
@@ -13,8 +13,8 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
-  # Git hub repo link
-  editURL = ""
+  # GitHub source link used by the theme's "Edit this page" action.
+  editURL = "https://github.com/DuoChip/fcj-heart-risk-report/edit/main/content/"
   description = "Bilingual FCAJ internship report and AWS SageMaker Heart Risk MLOps workshop"
   author = "TODO: Enter author name and email"
   showVisitedLinks = true

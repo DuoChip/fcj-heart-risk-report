@@ -4,6 +4,8 @@ Bilingual Hugo report and reproducible workshop for **Building and Deploying an 
 
 The site documents leakage-safe processing, managed training and HPO, quality-gated evaluation, Model Registry, real-time inference, Lambda/API Gateway, Data Capture, custom drift monitoring, CloudWatch alarms, SageMaker Pipelines, security, cost controls, and cleanup. It is an educational proof of concept, not a medical diagnosis.
 
+Published site: <https://duochip.github.io/fcj-heart-risk-report/>
+
 ## Prerequisites
 
 - Git
@@ -26,6 +28,8 @@ hugo --minify
 
 `.github/workflows/hugo.yml` builds with Hugo Extended 0.134.3 on pushes to `main` and publishes `public/` to the `gh-pages` branch.
 
+GitHub Pages should use **Deploy from a branch**, with branch `gh-pages` and folder `/ (root)`. No custom domain or `CNAME` file is required for the default GitHub Pages URL.
+
 ## Content conventions
 
 - Every main page has `_index.md` (English) and `_index.vi.md` (Vietnamese).
@@ -38,4 +42,4 @@ hugo --minify
 
 ## Important TODOs
 
-Add verified student details, event/publication information, actual safe project source attachments, repository Pages URL in `config.toml`, and cleanup evidence after cleanup is executed. The supplied AWS evidence catalog is already organized and linked; review masking before public deployment.
+Add verified student details, event/publication information, actual safe project source attachments, and cleanup evidence after cleanup is executed. The supplied AWS evidence catalog is already organized and linked; review masking before public deployment.
