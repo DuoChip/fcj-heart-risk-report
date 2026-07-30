@@ -30,7 +30,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **real-time endpoint in inservice state**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-01a-endpoint-inservice.png" alt="Real-time endpoint in InService state" loading="lazy">
+  <img src="../../../images/evidence/W6-01a-endpoint-inservice.png" alt="Real-time endpoint in InService state" loading="lazy">
   <figcaption>Real-time endpoint in InService state — <code>W6-01a-endpoint-inservice.png</code></figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ The next screenshot records **real-time endpoint in inservice state**.
 The next screenshot records **endpoint configuration and instance details**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-01b-endpoint-details.png" alt="Endpoint configuration and instance details" loading="lazy">
+  <img src="../../../images/evidence/W6-01b-endpoint-details.png" alt="Endpoint configuration and instance details" loading="lazy">
   <figcaption>Endpoint configuration and instance details — <code>W6-01b-endpoint-details.png</code></figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ The next screenshot records **endpoint configuration and instance details**.
 The next screenshot records **successful direct endpoint inference**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-03-direct-inference.png" alt="Successful direct endpoint inference" loading="lazy">
+  <img src="../../../images/evidence/W6-03-direct-inference.png" alt="Successful direct endpoint inference" loading="lazy">
   <figcaption>Successful direct endpoint inference — <code>W6-03-direct-inference.png</code></figcaption>
 </figure>
 

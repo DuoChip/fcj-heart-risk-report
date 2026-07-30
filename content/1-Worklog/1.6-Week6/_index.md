@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.6.</b> "
 ---
 
-# Week 6: Final evaluation and Model Registry
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

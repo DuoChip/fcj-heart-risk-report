@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.2.</b> "
 ---
 
-# Week 2: Dataset review and preprocessing design
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

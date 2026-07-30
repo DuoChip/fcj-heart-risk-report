@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.2.</b> "
 ---
 
-# Tuần 2: Khảo sát dữ liệu và thiết kế tiền xử lý
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

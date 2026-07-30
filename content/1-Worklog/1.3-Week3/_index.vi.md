@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.3.</b> "
 ---
 
-# Tuần 3: SageMaker Processing Job
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

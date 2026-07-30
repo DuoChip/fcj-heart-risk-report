@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>3.1.</b> "
 ---
 
-# Cost Optimization for a Personal SageMaker MLOps Project
-
 ## Introduction and motivation
 
 Continuously running endpoints differ from processing and training jobs that stop when work ends. The PoC therefore used three sequential HPO trials, one endpoint instance, Budget alerts, tags, and a cleanup runbook.

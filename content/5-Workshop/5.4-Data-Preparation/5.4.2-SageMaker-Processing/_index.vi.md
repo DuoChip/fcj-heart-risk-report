@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.4.2.</b> "
 ---
 
-# SageMaker Processing
-
 ## Mục tiêu
 
 Tạo train/validation/test có thể tái lập mà không leakage.
@@ -27,7 +25,7 @@ Numeric missing dùng median imputation và scaling; categorical dùng most-freq
 | Missing sau xử lý | 0 |
 | Phạm vi fit | `train_only` |
 
-Các vị trí minh chứng `W2-01`, `W2-02`, `W2-03` lần lượt chứng minh managed job hoàn tất, quality check trong log và output S3. Cần thêm file ảnh trước khi public.
+Minh chứng `W2-01`, `W2-02` và `W2-03` lần lượt xác nhận managed job hoàn tất, quality check trong log và output S3. Các ảnh được cung cấp được hiển thị và diễn giải bên dưới.
 
 **Xử lý lỗi:** feature count lệch thường do category vocabulary hoặc cột loại trừ thay đổi. Không refit trên validation/test. Dừng job lỗi và đọc CloudWatch log để kiểm soát phí.
 
@@ -40,7 +38,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **sagemaker processing job managed đã hoàn tất**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W2-01-processing-completed.png" alt="SageMaker Processing Job managed đã hoàn tất" loading="lazy">
+  <img src="../../../../images/evidence/W2-01-processing-completed.png" alt="SageMaker Processing Job managed đã hoàn tất" loading="lazy">
   <figcaption>SageMaker Processing Job managed đã hoàn tất — <code>W2-01-processing-completed.png</code></figcaption>
 </figure>
 
@@ -49,7 +47,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **log processing với kết quả split và kiểm tra chất lượng**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W2-02-processing-log.png" alt="Log Processing với kết quả split và kiểm tra chất lượng" loading="lazy">
+  <img src="../../../../images/evidence/W2-02-processing-log.png" alt="Log Processing với kết quả split và kiểm tra chất lượng" loading="lazy">
   <figcaption>Log Processing với kết quả split và kiểm tra chất lượng — <code>W2-02-processing-log.png</code></figcaption>
 </figure>
 
@@ -58,7 +56,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **dataset và artifact sau xử lý được lưu trên amazon s3**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W2-03-processed-s3.png" alt="Dataset và artifact sau xử lý được lưu trên Amazon S3" loading="lazy">
+  <img src="../../../../images/evidence/W2-03-processed-s3.png" alt="Dataset và artifact sau xử lý được lưu trên Amazon S3" loading="lazy">
   <figcaption>Dataset và artifact sau xử lý được lưu trên Amazon S3 — <code>W2-03-processed-s3.png</code></figcaption>
 </figure>
 

@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.4.</b> "
 ---
 
-# Week 4: Logistic Regression and XGBoost
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.12.</b> "
 ---
 
-# Tuần 12: Tài liệu, rà soát và cleanup
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.5.1.</b> "
 ---
 
-# Logistic Regression
-
 ## Mục tiêu và lý do
 
 Train baseline tuyến tính dễ diễn giải bằng managed job, độc lập phiên notebook.
@@ -30,7 +28,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **training job logistic regression managed**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W3-01-lr-training.png" alt="Training job Logistic Regression managed" loading="lazy">
+  <img src="../../../../images/evidence/W3-01-lr-training.png" alt="Training job Logistic Regression managed" loading="lazy">
   <figcaption>Training job Logistic Regression managed — <code>W3-01-lr-training.png</code></figcaption>
 </figure>
 
@@ -39,7 +37,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **validation metric của logistic regression**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W3-02-lr-metrics.png" alt="Validation metric của Logistic Regression" loading="lazy">
+  <img src="../../../../images/evidence/W3-02-lr-metrics.png" alt="Validation metric của Logistic Regression" loading="lazy">
   <figcaption>Validation metric của Logistic Regression — <code>W3-02-lr-metrics.png</code></figcaption>
 </figure>
 

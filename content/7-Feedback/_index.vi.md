@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>7.</b> "
 ---
 
-# Chia sẻ và phản hồi
-
 ## Trải nghiệm tổng thể và mức độ hài lòng
 
 TODO: Thêm cảm nhận cá nhân đã xác minh và mức độ hài lòng.

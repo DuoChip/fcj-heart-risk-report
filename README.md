@@ -18,15 +18,28 @@ git submodule update --init --recursive
 hugo server -D
 ```
 
+Open <http://localhost:1313/>.
+
 Build the production site:
 
 ```bash
-hugo --minify
+hugo --minify --baseURL http://localhost:8080/
 ```
+
+Serve the generated site with:
+
+```bash
+python3 -m http.server 8080 --directory public
+```
+
+Then open <http://localhost:8080/>.
 
 ## Deployment
 
-`.github/workflows/hugo.yml` builds with Hugo Extended 0.134.3 on pushes to `main` and publishes `public/` to the `gh-pages` branch.
+`.github/workflows/hugo.yml` builds with Hugo Extended 0.134.3 on pushes to
+`main`, overrides `baseURL` with
+`https://duochip.github.io/fcj-heart-risk-report/`, and publishes `public/` to
+the `gh-pages` branch.
 
 GitHub Pages should use **Deploy from a branch**, with branch `gh-pages` and folder `/ (root)`. No custom domain or `CNAME` file is required for the default GitHub Pages URL.
 

@@ -5,11 +5,9 @@ chapter: false
 pre: " <b>5.3.</b> "
 ---
 
-# Architecture
-
 ## Objective and flow
 
-![Heart-risk AWS architecture](/images/architecture/heart-risk-architecture.svg)
+![Heart-risk AWS architecture](../../images/architecture/heart-risk-architecture.svg)
 
 **Offline:** raw S3 → Processing → split/artifacts → Training/HPO → Evaluation → Registry.  
 **Online:** API Gateway → Lambda validation → endpoint → response; Data Capture writes JSONL to S3.  

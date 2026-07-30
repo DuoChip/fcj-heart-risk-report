@@ -23,7 +23,7 @@ jobs:
           extended: true
 
       - name: Build website
-        run: hugo --minify
+        run: hugo --minify --baseURL "https://duochip.github.io/fcj-heart-risk-report/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

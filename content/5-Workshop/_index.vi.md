@@ -21,7 +21,7 @@ Tài nguyên AWS có thể phát sinh phí, đặc biệt endpoint chạy liên 
 Hệ thống chỉ phục vụ mục đích học tập và minh họa; không phải là chẩn đoán y khoa.
 {{% /notice %}}
 
-![Kiến trúc Heart-risk MLOps](/images/architecture/heart-risk-architecture.svg)
+![Kiến trúc Heart-risk MLOps](../../images/architecture/heart-risk-architecture.svg)
 
 ## Mục tiêu học tập và điều hướng
 

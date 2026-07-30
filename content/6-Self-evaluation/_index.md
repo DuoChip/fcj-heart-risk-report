@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>6.</b> "
 ---
 
-# Self-evaluation
-
 Ratings are intentionally left for the student to select; examples are factual and improvement actions are concrete.
 
 | Criterion | Rating | Project example | Improvement action |

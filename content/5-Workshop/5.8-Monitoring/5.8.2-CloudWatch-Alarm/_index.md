@@ -33,7 +33,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **custom/heartrisk drift metrics in cloudwatch**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-04-custom-metrics.png" alt="Custom/HeartRisk drift metrics in CloudWatch" loading="lazy">
+  <img src="../../../images/evidence/W7-04-custom-metrics.png" alt="Custom/HeartRisk drift metrics in CloudWatch" loading="lazy">
   <figcaption>Custom/HeartRisk drift metrics in CloudWatch — <code>W7-04-custom-metrics.png</code></figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ The next screenshot records **custom/heartrisk drift metrics in cloudwatch**.
 The next screenshot records **custom drift alarm in alarm state**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-05-custom-alarm.png" alt="Custom drift alarm in ALARM state" loading="lazy">
+  <img src="../../../images/evidence/W7-05-custom-alarm.png" alt="Custom drift alarm in ALARM state" loading="lazy">
   <figcaption>Custom drift alarm in ALARM state — <code>W7-05-custom-alarm.png</code></figcaption>
 </figure>
 

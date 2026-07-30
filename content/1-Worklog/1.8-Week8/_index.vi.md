@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.8.</b> "
 ---
 
-# Tuần 8: Lambda và API Gateway
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

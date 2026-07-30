@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.8.1.</b> "
 ---
 
-# Custom drift Processing
-
 ## Luồng và quy tắc PoC
 
 Data Capture/S3 current data → custom SageMaker Processing → report → CloudWatch.
@@ -34,7 +32,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **chi tiết custom drift processing job**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-01a-custom-processing-job.png" alt="Chi tiết custom drift Processing Job" loading="lazy">
+  <img src="../../../../images/evidence/W7-01a-custom-processing-job.png" alt="Chi tiết custom drift Processing Job" loading="lazy">
   <figcaption>Chi tiết custom drift Processing Job — <code>W7-01a-custom-processing-job.png</code></figcaption>
 </figure>
 
@@ -43,7 +41,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **lịch sử custom drift processing job**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-01b-processing-job-list.png" alt="Lịch sử custom drift Processing Job" loading="lazy">
+  <img src="../../../../images/evidence/W7-01b-processing-job-list.png" alt="Lịch sử custom drift Processing Job" loading="lazy">
   <figcaption>Lịch sử custom drift Processing Job — <code>W7-01b-processing-job-list.png</code></figcaption>
 </figure>
 
@@ -52,7 +50,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **tóm tắt custom drift report**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-02-drift-report.png" alt="Tóm tắt custom drift report" loading="lazy">
+  <img src="../../../../images/evidence/W7-02-drift-report.png" alt="Tóm tắt custom drift report" loading="lazy">
   <figcaption>Tóm tắt custom drift report — <code>W7-02-drift-report.png</code></figcaption>
 </figure>
 
@@ -61,7 +59,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **tóm tắt sáu feature bị drift**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-03a-drift-features-summary.png" alt="Tóm tắt sáu feature bị drift" loading="lazy">
+  <img src="../../../../images/evidence/W7-03a-drift-features-summary.png" alt="Tóm tắt sáu feature bị drift" loading="lazy">
   <figcaption>Tóm tắt sáu feature bị drift — <code>W7-03a-drift-features-summary.png</code></figcaption>
 </figure>
 
@@ -70,7 +68,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **chi tiết custom drift theo feature**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-03b-drift-features-details.png" alt="Chi tiết custom drift theo feature" loading="lazy">
+  <img src="../../../../images/evidence/W7-03b-drift-features-details.png" alt="Chi tiết custom drift theo feature" loading="lazy">
   <figcaption>Chi tiết custom drift theo feature — <code>W7-03b-drift-features-details.png</code></figcaption>
 </figure>
 

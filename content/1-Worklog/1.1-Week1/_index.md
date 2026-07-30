@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.1.</b> "
 ---
 
-# Week 1: AWS foundation and project planning
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

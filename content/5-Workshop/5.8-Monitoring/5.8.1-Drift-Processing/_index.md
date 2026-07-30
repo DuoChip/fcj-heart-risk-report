@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.8.1.</b> "
 ---
 
-# Custom drift Processing
-
 ## Flow and PoC rules
 
 Data Capture/S3 current data → custom SageMaker Processing → report → CloudWatch.
@@ -34,7 +32,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **custom drift processing job details**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-01a-custom-processing-job.png" alt="Custom drift Processing Job details" loading="lazy">
+  <img src="../../../images/evidence/W7-01a-custom-processing-job.png" alt="Custom drift Processing Job details" loading="lazy">
   <figcaption>Custom drift Processing Job details — <code>W7-01a-custom-processing-job.png</code></figcaption>
 </figure>
 
@@ -43,7 +41,7 @@ The next screenshot records **custom drift processing job details**.
 The next screenshot records **custom drift processing job history**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-01b-processing-job-list.png" alt="Custom drift Processing Job history" loading="lazy">
+  <img src="../../../images/evidence/W7-01b-processing-job-list.png" alt="Custom drift Processing Job history" loading="lazy">
   <figcaption>Custom drift Processing Job history — <code>W7-01b-processing-job-list.png</code></figcaption>
 </figure>
 
@@ -52,7 +50,7 @@ The next screenshot records **custom drift processing job history**.
 The next screenshot records **custom drift report summary**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-02-drift-report.png" alt="Custom drift report summary" loading="lazy">
+  <img src="../../../images/evidence/W7-02-drift-report.png" alt="Custom drift report summary" loading="lazy">
   <figcaption>Custom drift report summary — <code>W7-02-drift-report.png</code></figcaption>
 </figure>
 
@@ -61,7 +59,7 @@ The next screenshot records **custom drift report summary**.
 The next screenshot records **summary of six drifted features**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-03a-drift-features-summary.png" alt="Summary of six drifted features" loading="lazy">
+  <img src="../../../images/evidence/W7-03a-drift-features-summary.png" alt="Summary of six drifted features" loading="lazy">
   <figcaption>Summary of six drifted features — <code>W7-03a-drift-features-summary.png</code></figcaption>
 </figure>
 
@@ -70,7 +68,7 @@ The next screenshot records **summary of six drifted features**.
 The next screenshot records **feature-level custom drift details**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-03b-drift-features-details.png" alt="Feature-level custom drift details" loading="lazy">
+  <img src="../../../images/evidence/W7-03b-drift-features-details.png" alt="Feature-level custom drift details" loading="lazy">
   <figcaption>Feature-level custom drift details — <code>W7-03b-drift-features-details.png</code></figcaption>
 </figure>
 

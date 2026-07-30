@@ -26,7 +26,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **pipeline execution failed by design**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-05-pipeline-failure.png" alt="Pipeline execution failed by design" loading="lazy">
+  <img src="../../../images/evidence/W8-05-pipeline-failure.png" alt="Pipeline execution failed by design" loading="lazy">
   <figcaption>Pipeline execution failed by design — <code>W8-05-pipeline-failure.png</code></figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ The next screenshot records **pipeline execution failed by design**.
 The next screenshot records **intentional aucthreshold override of 0.99**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-06-failure-parameters.png" alt="Intentional AucThreshold override of 0.99" loading="lazy">
+  <img src="../../../images/evidence/W8-06-failure-parameters.png" alt="Intentional AucThreshold override of 0.99" loading="lazy">
   <figcaption>Intentional AucThreshold override of 0.99 — <code>W8-06-failure-parameters.png</code></figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ The next screenshot records **intentional aucthreshold override of 0.99**.
 The next screenshot records **metricthresholdfailed step blocked registration**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-07-fail-step.png" alt="MetricThresholdFailed step blocked registration" loading="lazy">
+  <img src="../../../images/evidence/W8-07-fail-step.png" alt="MetricThresholdFailed step blocked registration" loading="lazy">
   <figcaption>MetricThresholdFailed step blocked registration — <code>W8-07-fail-step.png</code></figcaption>
 </figure>
 

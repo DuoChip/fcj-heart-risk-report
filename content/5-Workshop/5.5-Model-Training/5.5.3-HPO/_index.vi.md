@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.5.3.</b> "
 ---
 
-# Tối ưu siêu tham số
-
 ## Mục tiêu và cấu hình
 
 Dùng managed Bayesian search nhỏ có chủ đích để cải thiện XGBoost mà không mất kiểm soát chi phí.

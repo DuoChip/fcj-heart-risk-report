@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.4.2.</b> "
 ---
 
-# SageMaker Processing
-
 ## Objective
 
 Create reproducible train/validation/test data without leakage.
@@ -27,7 +25,7 @@ Numeric missing values use median imputation and scaling; categorical values use
 | Missing after processing | 0 |
 | Fit scope | `train_only` |
 
-Evidence slots `W2-01`, `W2-02`, `W2-03` respectively prove managed completion, logged quality checks, and persisted S3 outputs. The image files must be added before publication.
+Evidence `W2-01`, `W2-02`, and `W2-03` respectively proves managed completion, logged quality checks, and persisted S3 outputs. The supplied screenshots are displayed and interpreted below.
 
 **Troubleshooting:** feature-count mismatch usually means category vocabulary or excluded columns changed. Never refit on validation/test. Stop failed jobs and inspect CloudWatch logs to control cost.
 
@@ -40,7 +38,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **managed sagemaker processing job completed**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W2-01-processing-completed.png" alt="Managed SageMaker Processing Job completed" loading="lazy">
+  <img src="../../../images/evidence/W2-01-processing-completed.png" alt="Managed SageMaker Processing Job completed" loading="lazy">
   <figcaption>Managed SageMaker Processing Job completed — <code>W2-01-processing-completed.png</code></figcaption>
 </figure>
 
@@ -49,7 +47,7 @@ The next screenshot records **managed sagemaker processing job completed**.
 The next screenshot records **processing log with split and data-quality checks**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W2-02-processing-log.png" alt="Processing log with split and data-quality checks" loading="lazy">
+  <img src="../../../images/evidence/W2-02-processing-log.png" alt="Processing log with split and data-quality checks" loading="lazy">
   <figcaption>Processing log with split and data-quality checks — <code>W2-02-processing-log.png</code></figcaption>
 </figure>
 
@@ -58,7 +56,7 @@ The next screenshot records **processing log with split and data-quality checks*
 The next screenshot records **processed datasets and artifacts persisted in amazon s3**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W2-03-processed-s3.png" alt="Processed datasets and artifacts persisted in Amazon S3" loading="lazy">
+  <img src="../../../images/evidence/W2-03-processed-s3.png" alt="Processed datasets and artifacts persisted in Amazon S3" loading="lazy">
   <figcaption>Processed datasets and artifacts persisted in Amazon S3 — <code>W2-03-processed-s3.png</code></figcaption>
 </figure>
 

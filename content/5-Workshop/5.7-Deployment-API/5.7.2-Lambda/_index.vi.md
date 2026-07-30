@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.7.2.</b> "
 ---
 
-# Lambda wrapper
-
 `heart-risk-api` validate field bắt buộc, serialize request, chỉ gọi `heart-risk-endpoint`, và ánh xạ lỗi downstream thành response an toàn.
 
 ```python
@@ -29,7 +27,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **cấu hình lambda heart-risk-api đã triển khai**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-04-lambda-config.png" alt="Cấu hình Lambda heart-risk-api đã triển khai" loading="lazy">
+  <img src="../../../../images/evidence/W6-04-lambda-config.png" alt="Cấu hình Lambda heart-risk-api đã triển khai" loading="lazy">
   <figcaption>Cấu hình Lambda heart-risk-api đã triển khai — <code>W6-04-lambda-config.png</code></figcaption>
 </figure>
 
@@ -38,7 +36,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **biến môi trường endpoint và model của lambda**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-05-lambda-environment.png" alt="Biến môi trường endpoint và model của Lambda" loading="lazy">
+  <img src="../../../../images/evidence/W6-05-lambda-environment.png" alt="Biến môi trường endpoint và model của Lambda" loading="lazy">
   <figcaption>Biến môi trường endpoint và model của Lambda — <code>W6-05-lambda-environment.png</code></figcaption>
 </figure>
 
@@ -47,7 +45,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **tổng quan iam role của lambda**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-06a-lambda-role-overview.png" alt="Tổng quan IAM role của Lambda" loading="lazy">
+  <img src="../../../../images/evidence/W6-06a-lambda-role-overview.png" alt="Tổng quan IAM role của Lambda" loading="lazy">
   <figcaption>Tổng quan IAM role của Lambda — <code>W6-06a-lambda-role-overview.png</code></figcaption>
 </figure>
 
@@ -56,7 +54,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **chi tiết quyền gọi endpoint của lambda**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-06b-lambda-role-details.png" alt="Chi tiết quyền gọi endpoint của Lambda" loading="lazy">
+  <img src="../../../../images/evidence/W6-06b-lambda-role-details.png" alt="Chi tiết quyền gọi endpoint của Lambda" loading="lazy">
   <figcaption>Chi tiết quyền gọi endpoint của Lambda — <code>W6-06b-lambda-role-details.png</code></figcaption>
 </figure>
 

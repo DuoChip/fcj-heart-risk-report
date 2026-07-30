@@ -26,7 +26,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **sagemaker pipeline graph with pass and fail branches**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-01-pipeline-graph.png" alt="SageMaker Pipeline graph with pass and fail branches" loading="lazy">
+  <img src="../../../images/evidence/W8-01-pipeline-graph.png" alt="SageMaker Pipeline graph with pass and fail branches" loading="lazy">
   <figcaption>SageMaker Pipeline graph with pass and fail branches — <code>W8-01-pipeline-graph.png</code></figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ The next screenshot records **sagemaker pipeline graph with pass and fail branch
 The next screenshot records **successful heart-risk-pipeline execution**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-02-pipeline-success.png" alt="Successful heart-risk-pipeline execution" loading="lazy">
+  <img src="../../../images/evidence/W8-02-pipeline-success.png" alt="Successful heart-risk-pipeline execution" loading="lazy">
   <figcaption>Successful heart-risk-pipeline execution — <code>W8-02-pipeline-success.png</code></figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ The next screenshot records **successful heart-risk-pipeline execution**.
 The next screenshot records **step-level states on the successful path**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-03-success-steps.png" alt="Step-level states on the successful path" loading="lazy">
+  <img src="../../../images/evidence/W8-03-success-steps.png" alt="Step-level states on the successful path" loading="lazy">
   <figcaption>Step-level states on the successful path — <code>W8-03-success-steps.png</code></figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ The next screenshot records **step-level states on the successful path**.
 The next screenshot records **model quality condition passed**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-04-condition-pass.png" alt="Model quality condition passed" loading="lazy">
+  <img src="../../../images/evidence/W8-04-condition-pass.png" alt="Model quality condition passed" loading="lazy">
   <figcaption>Model quality condition passed — <code>W8-04-condition-pass.png</code></figcaption>
 </figure>
 

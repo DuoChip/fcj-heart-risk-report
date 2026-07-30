@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.1.</b> "
 ---
 
-# Tuần 1: Nền tảng AWS và lập kế hoạch
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

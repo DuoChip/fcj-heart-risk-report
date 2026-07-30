@@ -30,7 +30,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **endpoint thời gian thực ở trạng thái inservice**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-01a-endpoint-inservice.png" alt="Endpoint thời gian thực ở trạng thái InService" loading="lazy">
+  <img src="../../../../images/evidence/W6-01a-endpoint-inservice.png" alt="Endpoint thời gian thực ở trạng thái InService" loading="lazy">
   <figcaption>Endpoint thời gian thực ở trạng thái InService — <code>W6-01a-endpoint-inservice.png</code></figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **cấu hình endpoint và thông tin instance**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-01b-endpoint-details.png" alt="Cấu hình endpoint và thông tin instance" loading="lazy">
+  <img src="../../../../images/evidence/W6-01b-endpoint-details.png" alt="Cấu hình endpoint và thông tin instance" loading="lazy">
   <figcaption>Cấu hình endpoint và thông tin instance — <code>W6-01b-endpoint-details.png</code></figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **suy luận trực tiếp endpoint thành công**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-03-direct-inference.png" alt="Suy luận trực tiếp endpoint thành công" loading="lazy">
+  <img src="../../../../images/evidence/W6-03-direct-inference.png" alt="Suy luận trực tiếp endpoint thành công" loading="lazy">
   <figcaption>Suy luận trực tiếp endpoint thành công — <code>W6-03-direct-inference.png</code></figcaption>
 </figure>
 

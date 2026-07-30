@@ -42,7 +42,7 @@ Versioned S3 data/manifest; train/validation/test data; preprocessing/model arti
 
 ## 7. Solution architecture
 
-![Heart-risk MLOps architecture](/images/architecture/heart-risk-architecture.svg)
+![Heart-risk MLOps architecture](../images/architecture/heart-risk-architecture.svg)
 
 The diagram separates offline data/training, online inference, monitoring, and the Pipeline quality gate. IAM roles form service boundaries; S3 remains private.
 

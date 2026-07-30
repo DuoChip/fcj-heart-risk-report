@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.6.1.</b> "
 ---
 
-# Đánh giá cuối
-
 | Metric | Giá trị |
 |---|---:|
 | ROC-AUC | 0,885515 |
@@ -38,7 +36,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **metric test cuối và confusion matrix**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W5-02-evaluation-metrics-and-confusion-matrix.png" alt="Metric test cuối và confusion matrix" loading="lazy">
+  <img src="../../../../images/evidence/W5-02-evaluation-metrics-and-confusion-matrix.png" alt="Metric test cuối và confusion matrix" loading="lazy">
   <figcaption>Metric test cuối và confusion matrix — <code>W5-02-evaluation-metrics-and-confusion-matrix.png</code></figcaption>
 </figure>
 

@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.2.</b> "
 ---
 
-# Prerequisites
-
 ## Objective
 
 Prepare a controlled environment before creating billed resources.
@@ -42,7 +40,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **the project consistently uses the us-east-1 region**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-01-selected-region.png" alt="The project consistently uses the us-east-1 Region" loading="lazy">
+  <img src="../../images/evidence/AWS-01-selected-region.png" alt="The project consistently uses the us-east-1 Region" loading="lazy">
   <figcaption>The project consistently uses the us-east-1 Region — <code>AWS-01-selected-region.png</code></figcaption>
 </figure>
 
@@ -51,7 +49,7 @@ The next screenshot records **the project consistently uses the us-east-1 region
 The next screenshot records **project aws budget overview**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-02-budget-overview.png" alt="Project AWS Budget overview" loading="lazy">
+  <img src="../../images/evidence/AWS-02-budget-overview.png" alt="Project AWS Budget overview" loading="lazy">
   <figcaption>Project AWS Budget overview — <code>AWS-02-budget-overview.png</code></figcaption>
 </figure>
 
@@ -60,7 +58,7 @@ The next screenshot records **project aws budget overview**.
 The next screenshot records **main permissions of the sagemaker execution role**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-08-sagemaker-role-permissions.png" alt="Main permissions of the SageMaker execution role" loading="lazy">
+  <img src="../../images/evidence/AWS-08-sagemaker-role-permissions.png" alt="Main permissions of the SageMaker execution role" loading="lazy">
   <figcaption>Main permissions of the SageMaker execution role — <code>AWS-08-sagemaker-role-permissions.png</code></figcaption>
 </figure>
 
@@ -69,7 +67,7 @@ The next screenshot records **main permissions of the sagemaker execution role**
 The next screenshot records **lambda execution-role permissions**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-12-lambda-role-permissions.png" alt="Lambda execution-role permissions" loading="lazy">
+  <img src="../../images/evidence/AWS-12-lambda-role-permissions.png" alt="Lambda execution-role permissions" loading="lazy">
   <figcaption>Lambda execution-role permissions — <code>AWS-12-lambda-role-permissions.png</code></figcaption>
 </figure>
 

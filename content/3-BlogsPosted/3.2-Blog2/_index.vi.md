@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>3.2.</b> "
 ---
 
-# Model Registry và Quality Gate trong SageMaker Pipeline
-
 ## Giới thiệu và động lực
 
 Model version tách artifact đã train khỏi quyết định promotion. Version 1 và 2 Approved; version 2 được deploy; Pipeline tạo version 3 PendingManualApproval.

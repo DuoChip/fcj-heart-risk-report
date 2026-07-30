@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.7.4.</b> "
 ---
 
-# Data Capture
-
 Enable 100% input and output capture in JSONL to the private project S3 prefix.
 
 ```text
@@ -28,7 +26,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **data capture configured for 100% input and output**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-02-data-capture-config.png" alt="Data Capture configured for 100% input and output" loading="lazy">
+  <img src="../../../images/evidence/W6-02-data-capture-config.png" alt="Data Capture configured for 100% input and output" loading="lazy">
   <figcaption>Data Capture configured for 100% input and output — <code>W6-02-data-capture-config.png</code></figcaption>
 </figure>
 
@@ -37,7 +35,7 @@ The next screenshot records **data capture configured for 100% input and output*
 The next screenshot records **inference capture jsonl files stored in s3**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-12-capture-files.png" alt="Inference capture JSONL files stored in S3" loading="lazy">
+  <img src="../../../images/evidence/W6-12-capture-files.png" alt="Inference capture JSONL files stored in S3" loading="lazy">
   <figcaption>Inference capture JSONL files stored in S3 — <code>W6-12-capture-files.png</code></figcaption>
 </figure>
 
@@ -46,7 +44,7 @@ The next screenshot records **inference capture jsonl files stored in s3**.
 The next screenshot records **captured record containing endpoint input and output**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-13-capture-record.png" alt="Captured record containing endpoint input and output" loading="lazy">
+  <img src="../../../images/evidence/W6-13-capture-record.png" alt="Captured record containing endpoint input and output" loading="lazy">
   <figcaption>Captured record containing endpoint input and output — <code>W6-13-capture-record.png</code></figcaption>
 </figure>
 

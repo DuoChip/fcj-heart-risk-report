@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.5.</b> "
 ---
 
-# Model training
-
 Train two algorithm families, tune XGBoost with a small controlled search, and select using validation—not test—results.
 
 1. [Logistic Regression](5.5.1-Logistic-Regression/)

@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.8.</b> "
 ---
 
-# Week 8: Lambda and API Gateway
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

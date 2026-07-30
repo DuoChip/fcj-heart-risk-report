@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.7.2.</b> "
 ---
 
-# Lambda wrapper
-
 `heart-risk-api` validates required fields, serializes the endpoint request, invokes only `heart-risk-endpoint`, and maps downstream errors to safe responses.
 
 ```python
@@ -29,7 +27,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **deployed heart-risk-api lambda configuration**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-04-lambda-config.png" alt="Deployed heart-risk-api Lambda configuration" loading="lazy">
+  <img src="../../../images/evidence/W6-04-lambda-config.png" alt="Deployed heart-risk-api Lambda configuration" loading="lazy">
   <figcaption>Deployed heart-risk-api Lambda configuration — <code>W6-04-lambda-config.png</code></figcaption>
 </figure>
 
@@ -38,7 +36,7 @@ The next screenshot records **deployed heart-risk-api lambda configuration**.
 The next screenshot records **lambda endpoint and model environment variables**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-05-lambda-environment.png" alt="Lambda endpoint and model environment variables" loading="lazy">
+  <img src="../../../images/evidence/W6-05-lambda-environment.png" alt="Lambda endpoint and model environment variables" loading="lazy">
   <figcaption>Lambda endpoint and model environment variables — <code>W6-05-lambda-environment.png</code></figcaption>
 </figure>
 
@@ -47,7 +45,7 @@ The next screenshot records **lambda endpoint and model environment variables**.
 The next screenshot records **lambda iam role overview**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-06a-lambda-role-overview.png" alt="Lambda IAM role overview" loading="lazy">
+  <img src="../../../images/evidence/W6-06a-lambda-role-overview.png" alt="Lambda IAM role overview" loading="lazy">
   <figcaption>Lambda IAM role overview — <code>W6-06a-lambda-role-overview.png</code></figcaption>
 </figure>
 
@@ -56,7 +54,7 @@ The next screenshot records **lambda iam role overview**.
 The next screenshot records **detailed lambda endpoint-invocation permission**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-06b-lambda-role-details.png" alt="Detailed Lambda endpoint-invocation permission" loading="lazy">
+  <img src="../../../images/evidence/W6-06b-lambda-role-details.png" alt="Detailed Lambda endpoint-invocation permission" loading="lazy">
   <figcaption>Detailed Lambda endpoint-invocation permission — <code>W6-06b-lambda-role-details.png</code></figcaption>
 </figure>
 

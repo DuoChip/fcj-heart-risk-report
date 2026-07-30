@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.4.</b> "
 ---
 
-# Tuần 4: Logistic Regression và XGBoost
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

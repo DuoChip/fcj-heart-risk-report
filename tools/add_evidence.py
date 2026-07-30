@@ -147,7 +147,7 @@ def refresh_availability_text():
 refresh_availability_text()
 
 
-def render(items, vi=False):
+def render(items, asset_prefix, vi=False):
     heading = "## Evidence and technical interpretation" if not vi else "## Minh chứng và diễn giải kỹ thuật"
     intro = (
         "The following supplied project screenshots connect the documented configuration to observed AWS state."
@@ -169,7 +169,7 @@ def render(items, vi=False):
             lead,
             "",
             f'<figure class="evidence">',
-            f'  <img src="/images/evidence/{name}" alt="{caption}" loading="lazy">',
+            f'  <img src="{asset_prefix}images/evidence/{name}" alt="{caption}" loading="lazy">',
             f"  <figcaption>{caption} — <code>{name}</code></figcaption>",
             "</figure>",
             "",
@@ -179,13 +179,16 @@ def render(items, vi=False):
 
 
 for rel, items in groups.items():
+    # A rendered workshop URL has the "5-workshop" segment plus every segment
+    # in rel. Walk back to the site root before entering static/images.
     for suffix, vi in (("_index.md", False), ("_index.vi.md", True)):
+        asset_prefix = "../" * (1 + len(Path(rel).parts) + int(vi))
         path = CONTENT / rel / suffix
         text = path.read_text(encoding="utf-8")
         marker = "\n## Evidence and technical interpretation" if not vi else "\n## Minh chứng và diễn giải kỹ thuật"
         if marker in text:
             text = text.split(marker, 1)[0].rstrip() + "\n"
-        path.write_text(text.rstrip() + "\n\n" + render(items, vi), encoding="utf-8")
+        path.write_text(text.rstrip() + "\n\n" + render(items, asset_prefix, vi), encoding="utf-8")
 
 expected = {entry[0] for entries in groups.values() for entry in entries}
 actual = {path.name for path in (ROOT / "static" / "images" / "evidence").glob("*.png")}

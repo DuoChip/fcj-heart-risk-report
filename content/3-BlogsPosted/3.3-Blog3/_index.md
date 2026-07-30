@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>3.3.</b> "
 ---
 
-# Custom Data Drift Monitoring with SageMaker Processing and CloudWatch
-
 ## Introduction and motivation
 
 Data Capture provides current inference records, while the 4,900-row training baseline anchors comparison. The expected official feature metric was not observed, so the project implemented a transparent fallback.

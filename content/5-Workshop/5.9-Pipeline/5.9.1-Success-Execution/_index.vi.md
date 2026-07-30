@@ -26,7 +26,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **graph sagemaker pipeline với nhánh pass và fail**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-01-pipeline-graph.png" alt="Graph SageMaker Pipeline với nhánh pass và fail" loading="lazy">
+  <img src="../../../../images/evidence/W8-01-pipeline-graph.png" alt="Graph SageMaker Pipeline với nhánh pass và fail" loading="lazy">
   <figcaption>Graph SageMaker Pipeline với nhánh pass và fail — <code>W8-01-pipeline-graph.png</code></figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **execution heart-risk-pipeline thành công**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-02-pipeline-success.png" alt="Execution heart-risk-pipeline thành công" loading="lazy">
+  <img src="../../../../images/evidence/W8-02-pipeline-success.png" alt="Execution heart-risk-pipeline thành công" loading="lazy">
   <figcaption>Execution heart-risk-pipeline thành công — <code>W8-02-pipeline-success.png</code></figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **trạng thái từng step trên nhánh thành công**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-03-success-steps.png" alt="Trạng thái từng step trên nhánh thành công" loading="lazy">
+  <img src="../../../../images/evidence/W8-03-success-steps.png" alt="Trạng thái từng step trên nhánh thành công" loading="lazy">
   <figcaption>Trạng thái từng step trên nhánh thành công — <code>W8-03-success-steps.png</code></figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **điều kiện chất lượng mô hình đã pass**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-04-condition-pass.png" alt="Điều kiện chất lượng mô hình đã pass" loading="lazy">
+  <img src="../../../../images/evidence/W8-04-condition-pass.png" alt="Điều kiện chất lượng mô hình đã pass" loading="lazy">
   <figcaption>Điều kiện chất lượng mô hình đã pass — <code>W8-04-condition-pass.png</code></figcaption>
 </figure>
 

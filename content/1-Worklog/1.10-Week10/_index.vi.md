@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.10.</b> "
 ---
 
-# Tuần 10: Custom drift fallback và CloudWatch
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

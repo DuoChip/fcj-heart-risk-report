@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.10.</b> "
 ---
 
-# Week 10: Custom drift fallback and CloudWatch
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

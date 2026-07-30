@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.7.4.</b> "
 ---
 
-# Data Capture
-
 Bật capture 100% input/output dạng JSONL vào prefix S3 private của dự án.
 
 ```text
@@ -28,7 +26,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **data capture được cấu hình 100% input và output**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-02-data-capture-config.png" alt="Data Capture được cấu hình 100% input và output" loading="lazy">
+  <img src="../../../../images/evidence/W6-02-data-capture-config.png" alt="Data Capture được cấu hình 100% input và output" loading="lazy">
   <figcaption>Data Capture được cấu hình 100% input và output — <code>W6-02-data-capture-config.png</code></figcaption>
 </figure>
 
@@ -37,7 +35,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **các file jsonl inference capture lưu trong s3**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-12-capture-files.png" alt="Các file JSONL inference capture lưu trong S3" loading="lazy">
+  <img src="../../../../images/evidence/W6-12-capture-files.png" alt="Các file JSONL inference capture lưu trong S3" loading="lazy">
   <figcaption>Các file JSONL inference capture lưu trong S3 — <code>W6-12-capture-files.png</code></figcaption>
 </figure>
 
@@ -46,7 +44,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **record capture chứa input và output endpoint**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-13-capture-record.png" alt="Record capture chứa input và output endpoint" loading="lazy">
+  <img src="../../../../images/evidence/W6-13-capture-record.png" alt="Record capture chứa input và output endpoint" loading="lazy">
   <figcaption>Record capture chứa input và output endpoint — <code>W6-13-capture-record.png</code></figcaption>
 </figure>
 

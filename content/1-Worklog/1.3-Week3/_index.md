@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.3.</b> "
 ---
 
-# Week 3: Managed Processing Job
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

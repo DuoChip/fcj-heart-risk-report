@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.6.2.</b> "
 ---
 
-# Model Registry
-
 ## Mục tiêu và trạng thái
 
 Dùng `heart-attack-risk-models` để truy vết và có quyết định promotion của con người.
@@ -34,7 +32,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **các version và trạng thái phê duyệt trong model registry**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W5-01-model-versions.png" alt="Các version và trạng thái phê duyệt trong Model Registry" loading="lazy">
+  <img src="../../../../images/evidence/W5-01-model-versions.png" alt="Các version và trạng thái phê duyệt trong Model Registry" loading="lazy">
   <figcaption>Các version và trạng thái phê duyệt trong Model Registry — <code>W5-01-model-versions.png</code></figcaption>
 </figure>
 

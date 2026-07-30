@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.10.</b> "
 ---
 
-# Bảo mật và chi phí
-
 ## Kiểm soát đã hiện thực
 
 - Dùng IAM role thay access key; tách trust policy SageMaker/Lambda.
@@ -35,7 +33,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **budget alert được cấu hình để kiểm soát chi phí**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-03-budget-alerts.png" alt="Budget alert được cấu hình để kiểm soát chi phí" loading="lazy">
+  <img src="../../../images/evidence/AWS-03-budget-alerts.png" alt="Budget alert được cấu hình để kiểm soát chi phí" loading="lazy">
   <figcaption>Budget alert được cấu hình để kiểm soát chi phí — <code>AWS-03-budget-alerts.png</code></figcaption>
 </figure>
 
@@ -44,7 +42,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **project tag được gắn cho tài nguyên s3**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-07-s3-tags.png" alt="Project tag được gắn cho tài nguyên S3" loading="lazy">
+  <img src="../../../images/evidence/AWS-07-s3-tags.png" alt="Project tag được gắn cho tài nguyên S3" loading="lazy">
   <figcaption>Project tag được gắn cho tài nguyên S3 — <code>AWS-07-s3-tags.png</code></figcaption>
 </figure>
 
@@ -53,7 +51,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **trust relationship của sagemaker execution role**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-09-sagemaker-role-trust.png" alt="Trust relationship của SageMaker execution role" loading="lazy">
+  <img src="../../../images/evidence/AWS-09-sagemaker-role-trust.png" alt="Trust relationship của SageMaker execution role" loading="lazy">
   <figcaption>Trust relationship của SageMaker execution role — <code>AWS-09-sagemaker-role-trust.png</code></figcaption>
 </figure>
 
@@ -62,7 +60,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **policy truy cập s3 của sagemaker role**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-10-sagemaker-s3-policy.png" alt="Policy truy cập S3 của SageMaker role" loading="lazy">
+  <img src="../../../images/evidence/AWS-10-sagemaker-s3-policy.png" alt="Policy truy cập S3 của SageMaker role" loading="lazy">
   <figcaption>Policy truy cập S3 của SageMaker role — <code>AWS-10-sagemaker-s3-policy.png</code></figcaption>
 </figure>
 
@@ -71,7 +69,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **policy iam:passrole có phạm vi cho managed job**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-11-sagemaker-passrole-policy.png" alt="Policy iam:PassRole có phạm vi cho managed job" loading="lazy">
+  <img src="../../../images/evidence/AWS-11-sagemaker-passrole-policy.png" alt="Policy iam:PassRole có phạm vi cho managed job" loading="lazy">
   <figcaption>Policy iam:PassRole có phạm vi cho managed job — <code>AWS-11-sagemaker-passrole-policy.png</code></figcaption>
 </figure>
 
@@ -80,7 +78,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **trust relationship của lambda execution role**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-13-lambda-role-trust.png" alt="Trust relationship của Lambda execution role" loading="lazy">
+  <img src="../../../images/evidence/AWS-13-lambda-role-trust.png" alt="Trust relationship của Lambda execution role" loading="lazy">
   <figcaption>Trust relationship của Lambda execution role — <code>AWS-13-lambda-role-trust.png</code></figcaption>
 </figure>
 
@@ -89,7 +87,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **policy lambda gọi endpoint theo đặc quyền tối thiểu**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-14-lambda-invoke-policy.png" alt="Policy Lambda gọi endpoint theo đặc quyền tối thiểu" loading="lazy">
+  <img src="../../../images/evidence/AWS-14-lambda-invoke-policy.png" alt="Policy Lambda gọi endpoint theo đặc quyền tối thiểu" loading="lazy">
   <figcaption>Policy Lambda gọi endpoint theo đặc quyền tối thiểu — <code>AWS-14-lambda-invoke-policy.png</code></figcaption>
 </figure>
 

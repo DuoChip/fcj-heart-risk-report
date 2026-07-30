@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.5.</b> "
 ---
 
-# Week 5: HPO and model selection
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

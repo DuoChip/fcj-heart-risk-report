@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.6.1.</b> "
 ---
 
-# Final evaluation
-
 | Metric | Value |
 |---|---:|
 | ROC-AUC | 0.885515 |
@@ -38,7 +36,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **final test metrics and confusion matrix**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W5-02-evaluation-metrics-and-confusion-matrix.png" alt="Final test metrics and confusion matrix" loading="lazy">
+  <img src="../../../images/evidence/W5-02-evaluation-metrics-and-confusion-matrix.png" alt="Final test metrics and confusion matrix" loading="lazy">
   <figcaption>Final test metrics and confusion matrix — <code>W5-02-evaluation-metrics-and-confusion-matrix.png</code></figcaption>
 </figure>
 

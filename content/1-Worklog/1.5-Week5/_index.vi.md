@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.5.</b> "
 ---
 
-# Tuần 5: HPO và lựa chọn mô hình
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

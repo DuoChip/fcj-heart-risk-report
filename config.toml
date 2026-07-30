@@ -1,4 +1,8 @@
-baseURL = "https://duochip.github.io/fcj-heart-risk-report/"
+# Local development URL. GitHub Actions overrides this with the production
+# project URL during deployment.
+baseURL = "http://localhost:1313/"
+# Navigation uses the configured GitHub Pages base URL. Static evidence images
+# use page-relative paths so they also work in local and offline previews.
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"

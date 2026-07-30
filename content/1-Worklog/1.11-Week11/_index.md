@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.11.</b> "
 ---
 
-# Week 11: SageMaker Pipeline
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

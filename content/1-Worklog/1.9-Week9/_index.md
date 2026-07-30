@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.9.</b> "
 ---
 
-# Week 9: Data Capture and monitoring baseline
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

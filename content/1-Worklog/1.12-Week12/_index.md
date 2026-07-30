@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.12.</b> "
 ---
 
-# Week 12: Documentation, review, and cleanup
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

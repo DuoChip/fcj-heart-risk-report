@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.7.3.</b> "
 ---
 
-# API Gateway
-
 Tạo HTTP API `heart-risk-http-api` với:
 
 ```text
@@ -43,7 +41,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **các route http api cho health và prediction**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-07-api-routes.png" alt="Các route HTTP API cho health và prediction" loading="lazy">
+  <img src="../../../../images/evidence/W6-07-api-routes.png" alt="Các route HTTP API cho health và prediction" loading="lazy">
   <figcaption>Các route HTTP API cho health và prediction — <code>W6-07-api-routes.png</code></figcaption>
 </figure>
 
@@ -52,7 +50,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **response get /health thành công**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-08-health-200.png" alt="Response GET /health thành công" loading="lazy">
+  <img src="../../../../images/evidence/W6-08-health-200.png" alt="Response GET /health thành công" loading="lazy">
   <figcaption>Response GET /health thành công — <code>W6-08-health-200.png</code></figcaption>
 </figure>
 
@@ -61,7 +59,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **response post /predict thành công**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-09-predict-200.png" alt="Response POST /predict thành công" loading="lazy">
+  <img src="../../../../images/evidence/W6-09-predict-200.png" alt="Response POST /predict thành công" loading="lazy">
   <figcaption>Response POST /predict thành công — <code>W6-09-predict-200.png</code></figcaption>
 </figure>
 
@@ -70,7 +68,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **request thiếu field trả http 400**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-10-predict-400.png" alt="Request thiếu field trả HTTP 400" loading="lazy">
+  <img src="../../../../images/evidence/W6-10-predict-400.png" alt="Request thiếu field trả HTTP 400" loading="lazy">
   <figcaption>Request thiếu field trả HTTP 400 — <code>W6-10-predict-400.png</code></figcaption>
 </figure>
 
@@ -79,7 +77,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **prediction service không sẵn sàng trả http 502**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-11-predict-502.png" alt="Prediction service không sẵn sàng trả HTTP 502" loading="lazy">
+  <img src="../../../../images/evidence/W6-11-predict-502.png" alt="Prediction service không sẵn sàng trả HTTP 502" loading="lazy">
   <figcaption>Prediction service không sẵn sàng trả HTTP 502 — <code>W6-11-predict-502.png</code></figcaption>
 </figure>
 

@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.2.</b> "
 ---
 
-# Điều kiện tiên quyết
-
 ## Mục tiêu
 
 Chuẩn bị môi trường có kiểm soát trước khi tạo tài nguyên tính phí.
@@ -42,7 +40,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **dự án sử dụng thống nhất region us-east-1**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-01-selected-region.png" alt="Dự án sử dụng thống nhất Region us-east-1" loading="lazy">
+  <img src="../../../images/evidence/AWS-01-selected-region.png" alt="Dự án sử dụng thống nhất Region us-east-1" loading="lazy">
   <figcaption>Dự án sử dụng thống nhất Region us-east-1 — <code>AWS-01-selected-region.png</code></figcaption>
 </figure>
 
@@ -51,7 +49,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **tổng quan aws budget của dự án**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-02-budget-overview.png" alt="Tổng quan AWS Budget của dự án" loading="lazy">
+  <img src="../../../images/evidence/AWS-02-budget-overview.png" alt="Tổng quan AWS Budget của dự án" loading="lazy">
   <figcaption>Tổng quan AWS Budget của dự án — <code>AWS-02-budget-overview.png</code></figcaption>
 </figure>
 
@@ -60,7 +58,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **các quyền chính của sagemaker execution role**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-08-sagemaker-role-permissions.png" alt="Các quyền chính của SageMaker execution role" loading="lazy">
+  <img src="../../../images/evidence/AWS-08-sagemaker-role-permissions.png" alt="Các quyền chính của SageMaker execution role" loading="lazy">
   <figcaption>Các quyền chính của SageMaker execution role — <code>AWS-08-sagemaker-role-permissions.png</code></figcaption>
 </figure>
 
@@ -69,7 +67,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **các quyền của lambda execution role**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-12-lambda-role-permissions.png" alt="Các quyền của Lambda execution role" loading="lazy">
+  <img src="../../../images/evidence/AWS-12-lambda-role-permissions.png" alt="Các quyền của Lambda execution role" loading="lazy">
   <figcaption>Các quyền của Lambda execution role — <code>AWS-12-lambda-role-permissions.png</code></figcaption>
 </figure>
 

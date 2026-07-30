@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>3.2.</b> "
 ---
 
-# Model Registry and Quality Gates in SageMaker Pipelines
-
 ## Introduction and motivation
 
 Model versions separate trained artifacts from promotion decisions. Versions 1 and 2 were Approved; version 2 was deployed; the Pipeline created version 3 as PendingManualApproval.

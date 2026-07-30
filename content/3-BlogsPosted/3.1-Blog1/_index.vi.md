@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>3.1.</b> "
 ---
 
-# Tối ưu chi phí cho dự án MLOps cá nhân trên SageMaker
-
 ## Giới thiệu và động lực
 
 Endpoint chạy liên tục khác với Processing/Training Job kết thúc sau công việc. PoC vì vậy giới hạn ba HPO trial tuần tự, một endpoint, Budget alert, tags và runbook cleanup.

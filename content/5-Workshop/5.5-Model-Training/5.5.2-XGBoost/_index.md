@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.5.2.</b> "
 ---
 
-# XGBoost
-
 ## Objective and comparison
 
 Test a tree-based model that can learn nonlinear interactions.
@@ -29,7 +27,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **managed xgboost training job**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W3-03-xgb-training.png" alt="Managed XGBoost training job" loading="lazy">
+  <img src="../../../images/evidence/W3-03-xgb-training.png" alt="Managed XGBoost training job" loading="lazy">
   <figcaption>Managed XGBoost training job — <code>W3-03-xgb-training.png</code></figcaption>
 </figure>
 
@@ -38,7 +36,7 @@ The next screenshot records **managed xgboost training job**.
 The next screenshot records **default xgboost validation metrics**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W3-04-xgb-metrics.png" alt="Default XGBoost validation metrics" loading="lazy">
+  <img src="../../../images/evidence/W3-04-xgb-metrics.png" alt="Default XGBoost validation metrics" loading="lazy">
   <figcaption>Default XGBoost validation metrics — <code>W3-04-xgb-metrics.png</code></figcaption>
 </figure>
 

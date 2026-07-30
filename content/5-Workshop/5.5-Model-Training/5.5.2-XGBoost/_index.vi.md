@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.5.2.</b> "
 ---
 
-# XGBoost
-
 ## Mục tiêu và so sánh
 
 Thử model dạng cây có thể học tương tác phi tuyến.
@@ -29,7 +27,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **training job xgboost managed**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W3-03-xgb-training.png" alt="Training job XGBoost managed" loading="lazy">
+  <img src="../../../../images/evidence/W3-03-xgb-training.png" alt="Training job XGBoost managed" loading="lazy">
   <figcaption>Training job XGBoost managed — <code>W3-03-xgb-training.png</code></figcaption>
 </figure>
 
@@ -38,7 +36,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **validation metric của xgboost mặc định**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W3-04-xgb-metrics.png" alt="Validation metric của XGBoost mặc định" loading="lazy">
+  <img src="../../../../images/evidence/W3-04-xgb-metrics.png" alt="Validation metric của XGBoost mặc định" loading="lazy">
   <figcaption>Validation metric của XGBoost mặc định — <code>W3-04-xgb-metrics.png</code></figcaption>
 </figure>
 

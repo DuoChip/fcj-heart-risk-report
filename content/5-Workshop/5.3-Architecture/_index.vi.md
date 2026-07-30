@@ -5,11 +5,9 @@ chapter: false
 pre: " <b>5.3.</b> "
 ---
 
-# Kiến trúc
-
 ## Mục tiêu và luồng
 
-![Kiến trúc AWS Heart-risk](/images/architecture/heart-risk-architecture.svg)
+![Kiến trúc AWS Heart-risk](../../../images/architecture/heart-risk-architecture.svg)
 
 **Offline:** raw S3 → Processing → split/artifact → Training/HPO → Evaluation → Registry.  
 **Online:** API Gateway → Lambda validate → endpoint → response; Data Capture ghi JSONL vào S3.  

@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.6.</b> "
 ---
 
-# Tuần 6: Đánh giá cuối và Model Registry
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

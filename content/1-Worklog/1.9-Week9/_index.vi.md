@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.9.</b> "
 ---
 
-# Tuần 9: Data Capture và monitoring baseline
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

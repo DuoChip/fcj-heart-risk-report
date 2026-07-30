@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.6.2.</b> "
 ---
 
-# Model Registry
-
 ## Objective and states
 
 Use `heart-attack-risk-models` for lineage and a human promotion decision.
@@ -34,7 +32,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **model registry versions and approval states**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W5-01-model-versions.png" alt="Model Registry versions and approval states" loading="lazy">
+  <img src="../../../images/evidence/W5-01-model-versions.png" alt="Model Registry versions and approval states" loading="lazy">
   <figcaption>Model Registry versions and approval states — <code>W5-01-model-versions.png</code></figcaption>
 </figure>
 

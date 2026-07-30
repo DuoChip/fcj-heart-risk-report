@@ -33,7 +33,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **drift metric custom/heartrisk trong cloudwatch**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-04-custom-metrics.png" alt="Drift metric Custom/HeartRisk trong CloudWatch" loading="lazy">
+  <img src="../../../../images/evidence/W7-04-custom-metrics.png" alt="Drift metric Custom/HeartRisk trong CloudWatch" loading="lazy">
   <figcaption>Drift metric Custom/HeartRisk trong CloudWatch — <code>W7-04-custom-metrics.png</code></figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **custom drift alarm ở trạng thái alarm**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W7-05-custom-alarm.png" alt="Custom drift alarm ở trạng thái ALARM" loading="lazy">
+  <img src="../../../../images/evidence/W7-05-custom-alarm.png" alt="Custom drift alarm ở trạng thái ALARM" loading="lazy">
   <figcaption>Custom drift alarm ở trạng thái ALARM — <code>W7-05-custom-alarm.png</code></figcaption>
 </figure>
 

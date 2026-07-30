@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.7.</b> "
 ---
 
-# Week 7: Endpoint and direct inference
-
 **Dates:** TODO: Enter verified week dates
 
 ## Objectives and work completed

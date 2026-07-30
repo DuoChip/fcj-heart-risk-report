@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>3.</b> "
 ---
 
-# Blog drafts
-
 Three project-specific bilingual drafts are prepared below. They are **not claimed as published**.
 
 - TODO: Add verified AWS Study Group publication URLs

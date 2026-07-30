@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.5.1.</b> "
 ---
 
-# Logistic Regression
-
 ## Objective and rationale
 
 Train an interpretable linear baseline as a managed job, independent of the notebook session.
@@ -30,7 +28,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **managed logistic regression training job**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W3-01-lr-training.png" alt="Managed Logistic Regression training job" loading="lazy">
+  <img src="../../../images/evidence/W3-01-lr-training.png" alt="Managed Logistic Regression training job" loading="lazy">
   <figcaption>Managed Logistic Regression training job — <code>W3-01-lr-training.png</code></figcaption>
 </figure>
 
@@ -39,7 +37,7 @@ The next screenshot records **managed logistic regression training job**.
 The next screenshot records **logistic regression validation metrics**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W3-02-lr-metrics.png" alt="Logistic Regression validation metrics" loading="lazy">
+  <img src="../../../images/evidence/W3-02-lr-metrics.png" alt="Logistic Regression validation metrics" loading="lazy">
   <figcaption>Logistic Regression validation metrics — <code>W3-02-lr-metrics.png</code></figcaption>
 </figure>
 

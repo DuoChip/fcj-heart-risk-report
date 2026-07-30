@@ -21,7 +21,7 @@ AWS resources can incur charges, especially a continuously running endpoint. Use
 Educational demonstration only; not a medical diagnosis.
 {{% /notice %}}
 
-![Heart-risk MLOps architecture](/images/architecture/heart-risk-architecture.svg)
+![Heart-risk MLOps architecture](../images/architecture/heart-risk-architecture.svg)
 
 ## Learning objectives and navigation
 

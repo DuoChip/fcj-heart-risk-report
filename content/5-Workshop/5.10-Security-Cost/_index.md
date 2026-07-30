@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.10.</b> "
 ---
 
-# Security and cost
-
 ## Controls implemented
 
 - IAM roles instead of access keys; SageMaker/Lambda trust policies separated.
@@ -35,7 +33,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **budget alerts configured for cost control**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-03-budget-alerts.png" alt="Budget alerts configured for cost control" loading="lazy">
+  <img src="../../images/evidence/AWS-03-budget-alerts.png" alt="Budget alerts configured for cost control" loading="lazy">
   <figcaption>Budget alerts configured for cost control — <code>AWS-03-budget-alerts.png</code></figcaption>
 </figure>
 
@@ -44,7 +42,7 @@ The next screenshot records **budget alerts configured for cost control**.
 The next screenshot records **project tags applied to the s3 resource**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-07-s3-tags.png" alt="Project tags applied to the S3 resource" loading="lazy">
+  <img src="../../images/evidence/AWS-07-s3-tags.png" alt="Project tags applied to the S3 resource" loading="lazy">
   <figcaption>Project tags applied to the S3 resource — <code>AWS-07-s3-tags.png</code></figcaption>
 </figure>
 
@@ -53,7 +51,7 @@ The next screenshot records **project tags applied to the s3 resource**.
 The next screenshot records **sagemaker execution-role trust relationship**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-09-sagemaker-role-trust.png" alt="SageMaker execution-role trust relationship" loading="lazy">
+  <img src="../../images/evidence/AWS-09-sagemaker-role-trust.png" alt="SageMaker execution-role trust relationship" loading="lazy">
   <figcaption>SageMaker execution-role trust relationship — <code>AWS-09-sagemaker-role-trust.png</code></figcaption>
 </figure>
 
@@ -62,7 +60,7 @@ The next screenshot records **sagemaker execution-role trust relationship**.
 The next screenshot records **sagemaker role s3 access policy**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-10-sagemaker-s3-policy.png" alt="SageMaker role S3 access policy" loading="lazy">
+  <img src="../../images/evidence/AWS-10-sagemaker-s3-policy.png" alt="SageMaker role S3 access policy" loading="lazy">
   <figcaption>SageMaker role S3 access policy — <code>AWS-10-sagemaker-s3-policy.png</code></figcaption>
 </figure>
 
@@ -71,7 +69,7 @@ The next screenshot records **sagemaker role s3 access policy**.
 The next screenshot records **scoped iam:passrole policy for managed jobs**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-11-sagemaker-passrole-policy.png" alt="Scoped iam:PassRole policy for managed jobs" loading="lazy">
+  <img src="../../images/evidence/AWS-11-sagemaker-passrole-policy.png" alt="Scoped iam:PassRole policy for managed jobs" loading="lazy">
   <figcaption>Scoped iam:PassRole policy for managed jobs — <code>AWS-11-sagemaker-passrole-policy.png</code></figcaption>
 </figure>
 
@@ -80,7 +78,7 @@ The next screenshot records **scoped iam:passrole policy for managed jobs**.
 The next screenshot records **lambda execution-role trust relationship**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-13-lambda-role-trust.png" alt="Lambda execution-role trust relationship" loading="lazy">
+  <img src="../../images/evidence/AWS-13-lambda-role-trust.png" alt="Lambda execution-role trust relationship" loading="lazy">
   <figcaption>Lambda execution-role trust relationship — <code>AWS-13-lambda-role-trust.png</code></figcaption>
 </figure>
 
@@ -89,7 +87,7 @@ The next screenshot records **lambda execution-role trust relationship**.
 The next screenshot records **least-privilege lambda endpoint invocation policy**.
 
 <figure class="evidence">
-  <img src="/images/evidence/AWS-14-lambda-invoke-policy.png" alt="Least-privilege Lambda endpoint invocation policy" loading="lazy">
+  <img src="../../images/evidence/AWS-14-lambda-invoke-policy.png" alt="Least-privilege Lambda endpoint invocation policy" loading="lazy">
   <figcaption>Least-privilege Lambda endpoint invocation policy — <code>AWS-14-lambda-invoke-policy.png</code></figcaption>
 </figure>
 

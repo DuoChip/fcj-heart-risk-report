@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.5.3.</b> "
 ---
 
-# Hyperparameter optimization
-
 ## Objective and configuration
 
 Use a deliberately small managed Bayesian search to improve XGBoost without uncontrolled cost.

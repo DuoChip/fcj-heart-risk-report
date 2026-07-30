@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -7,8 +8,17 @@ CONTENT = ROOT / "content"
 
 def page(path, title, weight, pre, body):
     path.parent.mkdir(parents=True, exist_ok=True)
+    body = body.strip()
+    # The Learn theme already renders the front-matter title as the page H1.
+    # Remove only an identical leading body H1 to avoid duplicate headings.
+    body = re.sub(
+        rf"\A#\s+{re.escape(title)}\s*\n+",
+        "",
+        body,
+        count=1,
+    )
     path.write_text(
-        f'---\ntitle: "{title}"\nweight: {weight}\nchapter: false\npre: " <b>{pre}</b> "\n---\n\n{body.strip()}\n',
+        f'---\ntitle: "{title}"\nweight: {weight}\nchapter: false\npre: " <b>{pre}</b> "\n---\n\n{body}\n',
         encoding="utf-8",
     )
 
@@ -316,7 +326,7 @@ Versioned S3 data/manifest; train/validation/test data; preprocessing/model arti
 
 ## 7. Solution architecture
 
-![Heart-risk MLOps architecture](/images/architecture/heart-risk-architecture.svg)
+![Heart-risk MLOps architecture](../images/architecture/heart-risk-architecture.svg)
 
 The diagram separates offline data/training, online inference, monitoring, and the Pipeline quality gate. IAM roles form service boundaries; S3 remains private.
 
@@ -406,7 +416,7 @@ Dữ liệu/manifest S3 có version; bộ train/validation/test; artifact prepro
 
 ## 7. Kiến trúc giải pháp
 
-![Kiến trúc Heart-risk MLOps](/images/architecture/heart-risk-architecture.svg)
+![Kiến trúc Heart-risk MLOps](../../images/architecture/heart-risk-architecture.svg)
 
 Sơ đồ tách offline data/training, online inference, monitoring và Pipeline quality gate. IAM role tạo ranh giới dịch vụ; S3 giữ private.
 
@@ -563,7 +573,7 @@ This workshop builds a reproducible end-to-end MLOps proof of concept for binary
 
 {disclaimer_en}
 
-![Heart-risk MLOps architecture](/images/architecture/heart-risk-architecture.svg)
+![Heart-risk MLOps architecture](../images/architecture/heart-risk-architecture.svg)
 
 ## Learning objectives and navigation
 
@@ -592,7 +602,7 @@ Workshop xây dựng proof of concept MLOps có thể tái lập cho phân loạ
 
 {disclaimer_vi}
 
-![Kiến trúc Heart-risk MLOps](/images/architecture/heart-risk-architecture.svg)
+![Kiến trúc Heart-risk MLOps](../../images/architecture/heart-risk-architecture.svg)
 
 ## Mục tiêu học tập và điều hướng
 
@@ -630,7 +640,7 @@ Build a traceable flow from versioned raw data to monitored API and quality-gate
 | Drift | 6/20 violations; alarm `ALARM` |
 | Pipeline | success registers v3 pending; intentional fail blocks |
 
-![Architecture separating offline, online, monitoring and gate flows](/images/architecture/heart-risk-architecture.svg)
+![Architecture separating offline, online, monitoring and gate flows](../../images/architecture/heart-risk-architecture.svg)
 
 The diagram establishes service boundaries and makes the S3-centered artifact flow explicit.
 
@@ -659,7 +669,7 @@ Xây luồng truy vết từ raw data có version đến API được monitor v�
 | Drift | 6/20 violation; alarm `ALARM` |
 | Pipeline | success đăng ký v3 pending; fail chặn |
 
-![Kiến trúc tách luồng offline, online, monitoring và gate](/images/architecture/heart-risk-architecture.svg)
+![Kiến trúc tách luồng offline, online, monitoring và gate](../../../images/architecture/heart-risk-architecture.svg)
 
 Sơ đồ làm rõ ranh giới dịch vụ và luồng artifact lấy S3 làm trung tâm.
 
@@ -723,7 +733,7 @@ arch_en = f"""# Architecture
 
 ## Objective and flow
 
-![Heart-risk AWS architecture](/images/architecture/heart-risk-architecture.svg)
+![Heart-risk AWS architecture](../../images/architecture/heart-risk-architecture.svg)
 
 **Offline:** raw S3 → Processing → split/artifacts → Training/HPO → Evaluation → Registry.  
 **Online:** API Gateway → Lambda validation → endpoint → response; Data Capture writes JSONL to S3.  
@@ -748,7 +758,7 @@ arch_vi = f"""# Kiến trúc
 
 ## Mục tiêu và luồng
 
-![Kiến trúc AWS Heart-risk](/images/architecture/heart-risk-architecture.svg)
+![Kiến trúc AWS Heart-risk](../../../images/architecture/heart-risk-architecture.svg)
 
 **Offline:** raw S3 → Processing → split/artifact → Training/HPO → Evaluation → Registry.  
 **Online:** API Gateway → Lambda validate → endpoint → response; Data Capture ghi JSONL vào S3.  
@@ -839,7 +849,7 @@ Numeric missing values use median imputation and scaling; categorical values use
 | Missing after processing | 0 |
 | Fit scope | `train_only` |
 
-Evidence slots `W2-01`, `W2-02`, `W2-03` respectively prove managed completion, logged quality checks, and persisted S3 outputs. The image files must be added before publication.
+Evidence `W2-01`, `W2-02`, and `W2-03` respectively proves managed completion, logged quality checks, and persisted S3 outputs. The supplied screenshots are displayed and interpreted below.
 
 **Troubleshooting:** feature-count mismatch usually means category vocabulary or excluded columns changed. Never refit on validation/test. Stop failed jobs and inspect CloudWatch logs to control cost.
 
@@ -852,8 +862,8 @@ proc_vi = proc_en.replace("# SageMaker Processing", "# SageMaker Processing").re
 "| Check | Expected |", "| Kiểm tra | Kỳ vọng |").replace(
 "| Split rows |", "| Số dòng split |").replace("| Raw/processed features |", "| Feature raw/processed |").replace(
 "| Missing after processing |", "| Missing sau xử lý |").replace("| Fit scope |", "| Phạm vi fit |").replace(
-"Evidence slots", "Các vị trí minh chứng").replace("respectively prove managed completion, logged quality checks, and persisted S3 outputs. The image files must be added before publication.",
-"lần lượt chứng minh managed job hoàn tất, quality check trong log và output S3. Cần thêm file ảnh trước khi public.").replace(
+"Evidence `W2-01`, `W2-02`, and `W2-03` respectively proves managed completion, logged quality checks, and persisted S3 outputs. The supplied screenshots are displayed and interpreted below.",
+"Minh chứng `W2-01`, `W2-02` và `W2-03` lần lượt xác nhận managed job hoàn tất, quality check trong log và output S3. Các ảnh được cung cấp được hiển thị và diễn giải bên dưới.").replace(
 "**Troubleshooting:** feature-count mismatch usually means category vocabulary or excluded columns changed. Never refit on validation/test. Stop failed jobs and inspect CloudWatch logs to control cost.",
 "**Xử lý lỗi:** feature count lệch thường do category vocabulary hoặc cột loại trừ thay đổi. Không refit trên validation/test. Dừng job lỗi và đọc CloudWatch log để kiểm soát phí.").replace(
 "Next: [Model training]", "Tiếp theo: [Huấn luyện mô hình]")
@@ -1686,15 +1696,28 @@ git submodule update --init --recursive
 hugo server -D
 ```
 
+Open <http://localhost:1313/>.
+
 Build the production site:
 
 ```bash
-hugo --minify
+hugo --minify --baseURL http://localhost:8080/
 ```
+
+Serve the generated site with:
+
+```bash
+python3 -m http.server 8080 --directory public
+```
+
+Then open <http://localhost:8080/>.
 
 ## Deployment
 
-`.github/workflows/hugo.yml` builds with Hugo Extended 0.134.3 on pushes to `main` and publishes `public/` to the `gh-pages` branch.
+`.github/workflows/hugo.yml` builds with Hugo Extended 0.134.3 on pushes to
+`main`, overrides `baseURL` with
+`https://duochip.github.io/fcj-heart-risk-report/`, and publishes `public/` to
+the `gh-pages` branch.
 
 GitHub Pages should use **Deploy from a branch**, with branch `gh-pages` and folder `/ (root)`. No custom domain or `CNAME` file is required for the default GitHub Pages URL.
 

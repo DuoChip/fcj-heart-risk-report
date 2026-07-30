@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.11.</b> "
 ---
 
-# Tuần 11: SageMaker Pipeline
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

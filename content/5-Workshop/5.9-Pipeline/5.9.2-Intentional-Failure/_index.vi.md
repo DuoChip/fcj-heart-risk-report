@@ -26,7 +26,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **pipeline execution thất bại theo thiết kế**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-05-pipeline-failure.png" alt="Pipeline execution thất bại theo thiết kế" loading="lazy">
+  <img src="../../../../images/evidence/W8-05-pipeline-failure.png" alt="Pipeline execution thất bại theo thiết kế" loading="lazy">
   <figcaption>Pipeline execution thất bại theo thiết kế — <code>W8-05-pipeline-failure.png</code></figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **aucthreshold được ghi đè có chủ đích thành 0,99**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-06-failure-parameters.png" alt="AucThreshold được ghi đè có chủ đích thành 0,99" loading="lazy">
+  <img src="../../../../images/evidence/W8-06-failure-parameters.png" alt="AucThreshold được ghi đè có chủ đích thành 0,99" loading="lazy">
   <figcaption>AucThreshold được ghi đè có chủ đích thành 0,99 — <code>W8-06-failure-parameters.png</code></figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ Các ảnh dự án được cung cấp dưới đây liên kết cấu hình đ
 Ảnh tiếp theo ghi nhận **step metricthresholdfailed đã chặn đăng ký**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W8-07-fail-step.png" alt="Step MetricThresholdFailed đã chặn đăng ký" loading="lazy">
+  <img src="../../../../images/evidence/W8-07-fail-step.png" alt="Step MetricThresholdFailed đã chặn đăng ký" loading="lazy">
   <figcaption>Step MetricThresholdFailed đã chặn đăng ký — <code>W8-07-fail-step.png</code></figcaption>
 </figure>
 

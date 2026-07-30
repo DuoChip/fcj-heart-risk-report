@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>2.</b> "
 ---
 
-# Đề xuất dự án
-
 ## 1. Tóm tắt điều hành
 
 Dự án lập kế hoạch xây dựng proof of concept MLOps phục vụ học tập, chuyển thử nghiệm phân loại heart-risk trên notebook thành quy trình AWS có thể tái lập.
@@ -42,7 +40,7 @@ Dữ liệu/manifest S3 có version; bộ train/validation/test; artifact prepro
 
 ## 7. Kiến trúc giải pháp
 
-![Kiến trúc Heart-risk MLOps](/images/architecture/heart-risk-architecture.svg)
+![Kiến trúc Heart-risk MLOps](../../images/architecture/heart-risk-architecture.svg)
 
 Sơ đồ tách offline data/training, online inference, monitoring và Pipeline quality gate. IAM role tạo ranh giới dịch vụ; S3 giữ private.
 

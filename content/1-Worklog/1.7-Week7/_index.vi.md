@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>1.7.</b> "
 ---
 
-# Tuần 7: Endpoint và suy luận trực tiếp
-
 **Thời gian:** TODO: Nhập ngày đã xác minh
 
 ## Mục tiêu và công việc hoàn thành

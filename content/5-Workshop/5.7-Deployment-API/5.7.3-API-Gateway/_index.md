@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>5.7.3.</b> "
 ---
 
-# API Gateway
-
 Create HTTP API `heart-risk-http-api` with:
 
 ```text
@@ -43,7 +41,7 @@ The following supplied project screenshots connect the documented configuration 
 The next screenshot records **http api routes for health and prediction**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-07-api-routes.png" alt="HTTP API routes for health and prediction" loading="lazy">
+  <img src="../../../images/evidence/W6-07-api-routes.png" alt="HTTP API routes for health and prediction" loading="lazy">
   <figcaption>HTTP API routes for health and prediction — <code>W6-07-api-routes.png</code></figcaption>
 </figure>
 
@@ -52,7 +50,7 @@ The next screenshot records **http api routes for health and prediction**.
 The next screenshot records **successful get /health response**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-08-health-200.png" alt="Successful GET /health response" loading="lazy">
+  <img src="../../../images/evidence/W6-08-health-200.png" alt="Successful GET /health response" loading="lazy">
   <figcaption>Successful GET /health response — <code>W6-08-health-200.png</code></figcaption>
 </figure>
 
@@ -61,7 +59,7 @@ The next screenshot records **successful get /health response**.
 The next screenshot records **successful post /predict response**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-09-predict-200.png" alt="Successful POST /predict response" loading="lazy">
+  <img src="../../../images/evidence/W6-09-predict-200.png" alt="Successful POST /predict response" loading="lazy">
   <figcaption>Successful POST /predict response — <code>W6-09-predict-200.png</code></figcaption>
 </figure>
 
@@ -70,7 +68,7 @@ The next screenshot records **successful post /predict response**.
 The next screenshot records **missing-field request returns http 400**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-10-predict-400.png" alt="Missing-field request returns HTTP 400" loading="lazy">
+  <img src="../../../images/evidence/W6-10-predict-400.png" alt="Missing-field request returns HTTP 400" loading="lazy">
   <figcaption>Missing-field request returns HTTP 400 — <code>W6-10-predict-400.png</code></figcaption>
 </figure>
 
@@ -79,7 +77,7 @@ The next screenshot records **missing-field request returns http 400**.
 The next screenshot records **unavailable prediction service returns http 502**.
 
 <figure class="evidence">
-  <img src="/images/evidence/W6-11-predict-502.png" alt="Unavailable prediction service returns HTTP 502" loading="lazy">
+  <img src="../../../images/evidence/W6-11-predict-502.png" alt="Unavailable prediction service returns HTTP 502" loading="lazy">
   <figcaption>Unavailable prediction service returns HTTP 502 — <code>W6-11-predict-502.png</code></figcaption>
 </figure>
 

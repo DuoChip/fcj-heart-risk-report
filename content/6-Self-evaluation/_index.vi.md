@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>6.</b> "
 ---
 
-# Tự đánh giá
-
 Điểm đánh giá được để sinh viên tự chọn; ví dụ bám theo dự án và hành động cải thiện cụ thể.
 
 | Tiêu chí | Mức | Ví dụ dự án | Hành động cải thiện |

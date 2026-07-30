@@ -5,8 +5,6 @@ chapter: false
 pre: " <b>3.3.</b> "
 ---
 
-# Giám sát Data Drift tùy chỉnh bằng SageMaker Processing và CloudWatch
-
 ## Giới thiệu và động lực
 
 Data Capture cung cấp record suy luận hiện tại, còn baseline 4.900 dòng từ train làm mốc. Không quan sát thấy official feature metric nên dự án tạo fallback minh bạch.

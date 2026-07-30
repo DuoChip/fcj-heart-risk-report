@@ -19,7 +19,7 @@ Build a traceable flow from versioned raw data to monitored API and quality-gate
 | Drift | 6/20 violations; alarm `ALARM` |
 | Pipeline | success registers v3 pending; intentional fail blocks |
 
-![Architecture separating offline, online, monitoring and gate flows](/images/architecture/heart-risk-architecture.svg)
+![Architecture separating offline, online, monitoring and gate flows](../../images/architecture/heart-risk-architecture.svg)
 
 The diagram establishes service boundaries and makes the S3-centered artifact flow explicit.
 
