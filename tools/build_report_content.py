@@ -326,7 +326,7 @@ Versioned S3 data/manifest; train/validation/test data; preprocessing/model arti
 
 ## 7. Solution architecture
 
-![Heart-risk MLOps architecture](../images/architecture/heart-risk-architecture.svg)
+![Hand-created Heart Risk MLOps architecture](../images/architecture/heart-risk-architecture.jpg)
 
 The diagram separates offline data/training, online inference, monitoring, and the Pipeline quality gate. IAM roles form service boundaries; S3 remains private.
 
@@ -416,7 +416,7 @@ Dữ liệu/manifest S3 có version; bộ train/validation/test; artifact prepro
 
 ## 7. Kiến trúc giải pháp
 
-![Kiến trúc Heart-risk MLOps](../../images/architecture/heart-risk-architecture.svg)
+![Sơ đồ kiến trúc Heart Risk MLOps do sinh viên tự vẽ](../../images/architecture/heart-risk-architecture.jpg)
 
 Sơ đồ tách offline data/training, online inference, monitoring và Pipeline quality gate. IAM role tạo ranh giới dịch vụ; S3 giữ private.
 
@@ -606,7 +606,7 @@ This workshop builds a reproducible end-to-end MLOps proof of concept for binary
 
 {disclaimer_en}
 
-![Heart-risk MLOps architecture](../images/architecture/heart-risk-architecture.svg)
+![Hand-created Heart Risk MLOps architecture](../images/architecture/heart-risk-architecture.jpg)
 
 ## Learning objectives and navigation
 
@@ -635,7 +635,7 @@ Workshop xây dựng proof of concept MLOps có thể tái lập cho phân loạ
 
 {disclaimer_vi}
 
-![Kiến trúc Heart-risk MLOps](../../images/architecture/heart-risk-architecture.svg)
+![Sơ đồ kiến trúc Heart Risk MLOps do sinh viên tự vẽ](../../images/architecture/heart-risk-architecture.jpg)
 
 ## Mục tiêu học tập và điều hướng
 
@@ -673,7 +673,7 @@ Build a traceable flow from versioned raw data to monitored API and quality-gate
 | Drift | 6/20 violations; alarm `ALARM` |
 | Pipeline | success registers v3 pending; intentional fail blocks |
 
-![Architecture separating offline, online, monitoring and gate flows](../../images/architecture/heart-risk-architecture.svg)
+![Student-created architecture showing data, training, inference, and monitoring flows](../../images/architecture/heart-risk-architecture.jpg)
 
 The diagram establishes service boundaries and makes the S3-centered artifact flow explicit.
 
@@ -702,7 +702,7 @@ Xây luồng truy vết từ raw data có version đến API được monitor v�
 | Drift | 6/20 violation; alarm `ALARM` |
 | Pipeline | success đăng ký v3 pending; fail chặn |
 
-![Kiến trúc tách luồng offline, online, monitoring và gate](../../../images/architecture/heart-risk-architecture.svg)
+![Sơ đồ sinh viên tự vẽ thể hiện data, training, inference và monitoring](../../../images/architecture/heart-risk-architecture.jpg)
 
 Sơ đồ làm rõ ranh giới dịch vụ và luồng artifact lấy S3 làm trung tâm.
 
@@ -766,7 +766,7 @@ arch_en = f"""# Architecture
 
 ## Objective and flow
 
-![Heart-risk AWS architecture](../../images/architecture/heart-risk-architecture.svg)
+![Hand-created Heart Risk AWS architecture](../../images/architecture/heart-risk-architecture.jpg)
 
 **Offline:** raw S3 → Processing → split/artifacts → Training/HPO → Evaluation → Registry.  
 **Online:** API Gateway → Lambda validation → endpoint → response; Data Capture writes JSONL to S3.  
@@ -791,7 +791,7 @@ arch_vi = f"""# Kiến trúc
 
 ## Mục tiêu và luồng
 
-![Kiến trúc AWS Heart-risk](../../../images/architecture/heart-risk-architecture.svg)
+![Sơ đồ kiến trúc AWS Heart Risk do sinh viên tự vẽ](../../../images/architecture/heart-risk-architecture.jpg)
 
 **Offline:** raw S3 → Processing → split/artifact → Training/HPO → Evaluation → Registry.  
 **Online:** API Gateway → Lambda validate → endpoint → response; Data Capture ghi JSONL vào S3.  
@@ -1572,36 +1572,62 @@ workshop_pair("5.12-Results-Limitations", 12, "Results and limitations", "Kết 
 
 self_en = """# Self-evaluation
 
-Ratings are intentionally left for the student to select; examples are factual and improvement actions are concrete.
+## Evaluation method
 
-| Criterion | Rating | Project example | Improvement action |
-|---|---|---|---|
-| Knowledge | TODO: Good/Fair/Average | implemented a multi-service SageMaker MLOps flow | deepen networking, governance, SDK v3 |
-| Ability to learn | TODO | learned managed Processing, Registry, monitoring, Pipeline | reproduce with IaC |
-| Proactiveness | TODO | validated preprocessing locally before managed jobs | define acceptance tests earlier |
-| Discipline | TODO | maintained versioned outputs and quality gates | improve schedule/evidence capture |
-| Communication | TODO | produced bilingual technical documentation | request verified mentor feedback |
-| Teamwork | TODO | TODO: add a verified collaboration example | record decisions and owners |
-| Problem solving | TODO | custom drift fallback when expected metric was absent | compare official monitor configurations |
-| Contribution | TODO | integrated API, capture, alarm, pass/fail Pipeline | package reusable automation |
+This self-evaluation uses eight equally weighted criteria. Each criterion is scored on a 10-point scale and linked to evidence produced during the Heart Risk MLOps project. The target overall score is **8.0/10**.
 
-No mentor or team claim is inferred where evidence was not supplied."""
+| Criterion | Score | Level | Evidence from the project | Next improvement |
+|---|---:|---|---|---|
+| Knowledge | 8.5/10 | Good | Built a multi-service workflow using Amazon S3, SageMaker Processing, Training, HPO, Model Registry, Endpoint and Pipeline, plus Lambda, API Gateway and CloudWatch. | Deepen knowledge of private networking, governance and SageMaker Python SDK v3. |
+| Ability to learn | 8.5/10 | Good | Progressed from local notebook experiments to managed processing, model registration, monitoring and pipeline execution. | Reproduce the environment with Infrastructure as Code and CI/CD. |
+| Proactiveness | 8.0/10 | Good | Validated preprocessing locally before starting managed jobs, defined model quality gates and captured operational evidence. | Define acceptance tests and evidence requirements at the start of each milestone. |
+| Discipline | 7.5/10 | Fair | Kept versioned S3 outputs, separated train/test processing and used pass/fail quality gates. | Maintain a stricter task schedule and record resource-cleanup evidence consistently. |
+| Communication | 7.5/10 | Fair | Produced a bilingual technical report and shared two technical posts with the AWS Study Group community. | Make technical presentations more concise and record structured reviewer feedback. |
+| Teamwork | 7.0/10 | Fair | Coordinated the publication of project learning through community posts and documented shared references; however, detailed task ownership was not recorded throughout the project. | Keep a decision log with owners, deadlines and review outcomes. |
+| Problem solving | 9.0/10 | Good | Replaced a missing official drift metric with a custom Processing job, corrected sparse-metric alarm handling, changed an unsupported instance type and made Pipeline creation idempotent. | Compare the custom monitoring approach with a fully configured official Model Monitor baseline. |
+| Contribution | 8.0/10 | Good | Delivered an end-to-end PoC covering training, deployment, API inference, data capture, drift alarms and Pipeline pass/fail scenarios. | Package repeated steps as reusable modules and automate deployment and cleanup. |
+
+## Overall result
+
+| Measure | Result |
+|---|---:|
+| Total | **64.0/80** |
+| Average | **8.0/10** |
+| Overall level | **Good** |
+| Target | **Achieved** |
+
+## Reflection
+
+The strongest outcome is the ability to diagnose integration issues across ML and AWS services while preserving data quality and traceability. The main gaps are not in the PoC result itself, but in production readiness: Infrastructure as Code, automated tests and deployment, security hardening, and more systematic teamwork records. These are the priorities for the next iteration."""
 self_vi = """# Tự đánh giá
 
-Điểm đánh giá được để sinh viên tự chọn; ví dụ bám theo dự án và hành động cải thiện cụ thể.
+## Phương pháp đánh giá
 
-| Tiêu chí | Mức | Ví dụ dự án | Hành động cải thiện |
-|---|---|---|---|
-| Kiến thức | TODO: Good/Fair/Average | hiện thực quy trình SageMaker MLOps đa dịch vụ | đào sâu networking, governance, SDK v3 |
-| Khả năng học | TODO | học Processing, Registry, monitoring, Pipeline managed | tái lập bằng IaC |
-| Chủ động | TODO | validate preprocessing local trước managed job | định nghĩa acceptance test sớm hơn |
-| Kỷ luật | TODO | giữ output có version và quality gate | cải thiện lịch và capture minh chứng |
-| Giao tiếp | TODO | viết tài liệu kỹ thuật song ngữ | xin feedback mentor đã xác minh |
-| Làm việc nhóm | TODO | TODO: thêm ví dụ cộng tác đã xác minh | ghi lại quyết định và owner |
-| Giải quyết vấn đề | TODO | tạo custom drift khi thiếu metric mong đợi | so sánh cấu hình official monitor |
-| Đóng góp | TODO | tích hợp API, capture, alarm, Pipeline pass/fail | đóng gói automation tái sử dụng |
+Phần tự đánh giá sử dụng tám tiêu chí có trọng số bằng nhau. Mỗi tiêu chí được chấm theo thang 10 điểm và gắn với minh chứng đã tạo trong dự án Heart Risk MLOps. Mục tiêu tổng thể là **8,0/10**.
 
-Không suy diễn thông tin mentor hay teamwork khi chưa có minh chứng."""
+| Tiêu chí | Điểm | Mức | Minh chứng từ dự án | Hướng cải thiện |
+|---|---:|---|---|---|
+| Kiến thức | 8,5/10 | Tốt | Xây dựng quy trình đa dịch vụ với Amazon S3, SageMaker Processing, Training, HPO, Model Registry, Endpoint và Pipeline, kết hợp Lambda, API Gateway và CloudWatch. | Đào sâu private networking, governance và SageMaker Python SDK v3. |
+| Khả năng học hỏi | 8,5/10 | Tốt | Chuyển từ thử nghiệm notebook cục bộ sang processing managed, đăng ký model, monitoring và thực thi pipeline. | Tái lập môi trường bằng Infrastructure as Code và CI/CD. |
+| Tính chủ động | 8,0/10 | Tốt | Kiểm tra preprocessing cục bộ trước khi chạy managed job, thiết lập quality gate và thu thập minh chứng vận hành. | Xác định acceptance test và yêu cầu minh chứng ngay từ đầu mỗi mốc công việc. |
+| Tính kỷ luật | 7,5/10 | Khá | Quản lý output có phiên bản trên S3, tách biệt xử lý train/test và sử dụng quality gate pass/fail. | Duy trì lịch công việc chặt chẽ hơn và ghi nhận đầy đủ minh chứng dọn dẹp tài nguyên. |
+| Giao tiếp | 7,5/10 | Khá | Hoàn thiện báo cáo kỹ thuật song ngữ và chia sẻ hai bài viết kỹ thuật với cộng đồng AWS Study Group. | Trình bày kỹ thuật cô đọng hơn và ghi nhận phản hồi người review theo cấu trúc. |
+| Làm việc nhóm | 7,0/10 | Khá | Phối hợp chia sẻ kiến thức dự án qua các bài viết cộng đồng và ghi nhận tài liệu tham khảo chung; tuy nhiên chưa lưu đầy đủ phân công công việc xuyên suốt dự án. | Duy trì decision log có người phụ trách, thời hạn và kết quả review. |
+| Giải quyết vấn đề | 9,0/10 | Tốt | Thay metric drift chính thức bị thiếu bằng custom Processing job, sửa cách xử lý alarm khi metric thưa, đổi instance không được hỗ trợ và giúp quá trình tạo Pipeline có tính idempotent. | So sánh giải pháp monitoring tùy chỉnh với Model Monitor chính thức được cấu hình đầy đủ baseline. |
+| Mức độ đóng góp | 8,0/10 | Tốt | Hoàn thiện PoC end-to-end gồm huấn luyện, triển khai, API inference, data capture, drift alarm và hai kịch bản Pipeline pass/fail. | Đóng gói các bước lặp lại thành module tái sử dụng, tự động hóa triển khai và dọn dẹp. |
+
+## Kết quả tổng hợp
+
+| Chỉ số | Kết quả |
+|---|---:|
+| Tổng điểm | **64,0/80** |
+| Điểm trung bình | **8,0/10** |
+| Mức tổng thể | **Tốt** |
+| Mục tiêu | **Đạt** |
+
+## Tự nhìn nhận
+
+Kết quả nổi bật nhất là khả năng chẩn đoán lỗi tích hợp giữa quy trình ML và các dịch vụ AWS mà vẫn duy trì chất lượng dữ liệu và khả năng truy vết. Các khoảng trống chính không nằm ở kết quả PoC mà ở mức độ sẵn sàng production: Infrastructure as Code, kiểm thử và triển khai tự động, tăng cường bảo mật, cùng hồ sơ teamwork có hệ thống hơn. Đây là các ưu tiên cho vòng phát triển tiếp theo."""
 pair(CONTENT / "6-Self-evaluation", "Self-evaluation", "Tự đánh giá", 6, "6.", self_en, self_vi)
 
 feedback_en = """# Sharing and feedback
@@ -1683,6 +1709,8 @@ arch_dir.mkdir(parents=True, exist_ok=True)
 <g><rect class="box" x="65" y="493" width="190" height="58"/><text x="160" y="518" text-anchor="middle" class="h">Data Capture / S3</text><text x="160" y="539" text-anchor="middle" class="t">JSONL current data</text><rect class="box" x="340" y="493" width="190" height="58"/><text x="435" y="518" text-anchor="middle" class="h">Custom Processing</text><text x="435" y="539" text-anchor="middle" class="t">drift report</text><rect class="box" x="615" y="493" width="190" height="58"/><text x="710" y="518" text-anchor="middle" class="h">CloudWatch</text><text x="710" y="539" text-anchor="middle" class="t">custom metrics</text><rect class="box" x="890" y="493" width="190" height="58"/><text x="980" y="518" text-anchor="middle" class="h">Alarm</text><text x="980" y="539" text-anchor="middle" class="t">ALARM · missing ignore</text><path class="mon" d="M255 522H335"/><path class="mon" d="M530 522H610"/><path class="mon" d="M805 522H885"/></g>
 <rect class="lane" x="45" y="596" width="1110" height="98" rx="10"/><text x="65" y="624" class="h">Pipeline quality gate</text><text x="65" y="653" class="t">Preprocess → Train → Evaluate → Check AUC/F1/Recall</text><path class="data" d="M440 650H595"/><text x="620" y="642" class="t">pass → RegisterModel</text><text x="620" y="670" class="t">fail → MetricThresholdFailed</text>
 <g><line x1="760" y1="716" x2="805" y2="716" class="data"/><text x="815" y="721" class="t">data</text><line x1="880" y1="716" x2="925" y2="716" class="infer"/><text x="935" y="721" class="t">inference</text><line x1="1030" y1="716" x2="1075" y2="716" class="mon"/><text x="1085" y="721" class="t">monitoring</text></g></svg>""", encoding="utf-8")
+# The submitted hand-created JPEG is the canonical architecture artifact.
+(arch_dir / "heart-risk-architecture.svg").unlink(missing_ok=True)
 
 
 # Remove obsolete sample assets and create safe attachment placeholders only.

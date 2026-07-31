@@ -19,9 +19,9 @@ Xây luồng truy vết từ raw data có version đến API được monitor v�
 | Drift | 6/20 violation; alarm `ALARM` |
 | Pipeline | success đăng ký v3 pending; fail chặn |
 
-![Kiến trúc tách luồng offline, online, monitoring và gate](../../../images/architecture/heart-risk-architecture.svg)
+![Sơ đồ sinh viên tự vẽ thể hiện data, training, inference và monitoring](../../../images/architecture/heart-risk-architecture.jpg)
 
-Sơ đồ làm rõ ranh giới dịch vụ và luồng artifact lấy S3 làm trung tâm.
+Sơ đồ do sinh viên tự dựng làm rõ quan hệ giữa các dịch vụ và luồng training/inference lấy S3 làm trung tâm.
 
 ## Đóng góp và tùy biến cá nhân
 

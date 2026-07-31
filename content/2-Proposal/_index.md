@@ -42,9 +42,9 @@ Versioned S3 data/manifest; train/validation/test data; preprocessing/model arti
 
 ## 7. Solution architecture
 
-![Heart-risk MLOps architecture](../images/architecture/heart-risk-architecture.svg)
+![Hand-created Heart Risk MLOps architecture](../images/architecture/heart-risk-architecture.jpg)
 
-The diagram separates offline data/training, online inference, monitoring, and the Pipeline quality gate. IAM roles form service boundaries; S3 remains private.
+This student-created architecture diagram connects the offline SageMaker workflow, online API inference path, and monitoring path. It is the submitted architecture artifact rather than an automatically generated diagram.
 
 ## 8. AWS services and rationale
 

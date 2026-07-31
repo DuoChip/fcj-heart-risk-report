@@ -19,9 +19,9 @@ Build a traceable flow from versioned raw data to monitored API and quality-gate
 | Drift | 6/20 violations; alarm `ALARM` |
 | Pipeline | success registers v3 pending; intentional fail blocks |
 
-![Architecture separating offline, online, monitoring and gate flows](../../images/architecture/heart-risk-architecture.svg)
+![Student-created architecture showing data, training, inference, and monitoring flows](../../images/architecture/heart-risk-architecture.jpg)
 
-The diagram establishes service boundaries and makes the S3-centered artifact flow explicit.
+The student-created diagram establishes the main AWS service relationships and makes the S3-centered training and inference flow explicit.
 
 ## Personal Contributions and Customizations
 

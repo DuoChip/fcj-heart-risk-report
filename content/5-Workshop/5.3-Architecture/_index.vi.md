@@ -7,7 +7,7 @@ pre: " <b>5.3.</b> "
 
 ## Mục tiêu và luồng
 
-![Kiến trúc AWS Heart-risk](../../../images/architecture/heart-risk-architecture.svg)
+![Sơ đồ kiến trúc AWS Heart Risk do sinh viên tự vẽ](../../../images/architecture/heart-risk-architecture.jpg)
 
 **Offline:** raw S3 → Processing → split/artifact → Training/HPO → Evaluation → Registry.  
 **Online:** API Gateway → Lambda validate → endpoint → response; Data Capture ghi JSONL vào S3.  
@@ -21,7 +21,7 @@ pre: " <b>5.3.</b> "
 | Service IAM role, S3 private | VPC-only và chiến lược KMS key |
 | Script thủ công và Pipeline | IaC, CI/CD, automated retraining có phê duyệt |
 
-SVG là sơ đồ tài liệu gốc, không phải minh chứng trạng thái tài nguyên. Cần kiểm tra trạng thái thật bằng console/CLI và ảnh đã che thông tin.
+Đây là sơ đồ kiến trúc do sinh viên tự dựng để nộp, không phải minh chứng trạng thái live. Trạng thái thật được kiểm tra bằng console/CLI và ảnh dự án.
 
 **Xử lý lỗi:** nếu artifact path không khớp, kiểm tra S3 URI và Pipeline property thay vì copy thủ công. Dịch vụ phát sinh phí theo Region.
 

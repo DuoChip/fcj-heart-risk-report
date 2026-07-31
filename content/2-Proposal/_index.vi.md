@@ -40,9 +40,9 @@ Dữ liệu/manifest S3 có version; bộ train/validation/test; artifact prepro
 
 ## 7. Kiến trúc giải pháp
 
-![Kiến trúc Heart-risk MLOps](../../images/architecture/heart-risk-architecture.svg)
+![Sơ đồ kiến trúc Heart Risk MLOps do sinh viên tự vẽ](../../images/architecture/heart-risk-architecture.jpg)
 
-Sơ đồ tách offline data/training, online inference, monitoring và Pipeline quality gate. IAM role tạo ranh giới dịch vụ; S3 giữ private.
+Sơ đồ kiến trúc do sinh viên tự dựng kết nối workflow SageMaker offline, luồng suy luận API online và monitoring. Đây là artifact kiến trúc dùng để nộp, không phải sơ đồ sinh tự động.
 
 ## 8. Dịch vụ AWS và lý do lựa chọn
 
