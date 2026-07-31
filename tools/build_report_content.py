@@ -469,22 +469,22 @@ pair(CONTENT / "2-Proposal", "Proposal", "Đề xuất dự án", 2, "2.", propo
 
 
 pair(CONTENT / "3-BlogsPosted", "Blogs Posted", "Blog đã đăng", 3, "3.",
-"""Two articles have verified Facebook post URLs in **AWS Study Group VN**; the third remains a draft.
+"""Two articles have verified Facebook post URLs in **AWS Study Group VN**; the third has been submitted and is **pending approval**.
 
 | Article | Status |
 |---|---|
 | AWS Lambda cost and performance optimization | Published/shared — URL verified |
 | Amazon SageMaker cost optimization | Published/shared — URL verified |
-| Custom Data Drift Monitoring | Draft |
+| Running SageMaker MLOps on USD 200: 13 Budget Decisions | Pending approval |
 
 The supplied Facebook exports and screenshots identify Nguyễn Châu on the posts and tag Phạm Đình Được. Publication dates remain TODO because the evidence only displays “Yesterday,” not a reliable calendar date.""",
-"""Hai bài viết đã có URL Facebook được xác minh trong **AWS Study Group VN**; bài thứ ba vẫn là bản nháp.
+"""Hai bài viết đã có URL Facebook được xác minh trong **AWS Study Group VN**; bài thứ ba đã được gửi và đang **chờ duyệt**.
 
 | Bài viết | Trạng thái |
 |---|---|
 | Tối ưu chi phí và hiệu năng AWS Lambda | Đã đăng/chia sẻ — URL đã xác minh |
 | Tối ưu chi phí Amazon SageMaker | Đã đăng/chia sẻ — URL đã xác minh |
-| Custom Data Drift Monitoring | Bản nháp |
+| Chạy SageMaker MLOps với 200 USD: 13 quyết định để không cháy budget | Chờ duyệt |
 
 Bản text và ảnh Facebook hiển thị Nguyễn Châu trên bài viết và gắn thẻ Phạm Đình Được. Ngày đăng vẫn là TODO vì minh chứng chỉ hiển thị “Hôm qua”, không phải ngày lịch đáng tin cậy.""")
 
@@ -501,11 +501,11 @@ blogs = [
  "It covers Managed Spot Training, bounded HPO, instance selection, endpoint cost, Auto Scaling, Serverless Inference, model optimization, Pipelines, and Model Registry. The heart-risk PoC applies bounded HPO, one endpoint, manual approval, quality gates, Budget alerts, and cleanup.",
  "Bài viết đề cập Managed Spot Training, HPO có giới hạn, chọn instance, endpoint cost, Auto Scaling, Serverless Inference, model optimization, Pipelines và Model Registry. Heart-risk PoC áp dụng ba HPO trial, một endpoint, manual approval, quality gate, Budget alert và cleanup.",
  "https://www.facebook.com/groups/awsstudygroupfcj/posts/2227364341361859/?notif_id=1785325679108331&notif_t=tagged_with_story&ref=notif"),
-("Custom Data Drift Monitoring with SageMaker Processing and CloudWatch", "Giám sát Data Drift tùy chỉnh bằng SageMaker Processing và CloudWatch",
- "Data Capture provides current inference records, while the 4,900-row training baseline anchors comparison. The expected official feature metric was not observed, so the project implemented a transparent fallback.",
- "Data Capture cung cấp record suy luận hiện tại, còn baseline 4.900 dòng từ train làm mốc. Không quan sát thấy official feature metric nên dự án tạo fallback minh bạch.",
- "A custom Processing Job checked 20 features: numeric standardized mean shift > 0.5 and categorical total variation distance > 0.20. Six features drifted. It published `DriftDetected=1` and `DataQualityViolationCount=6`; `TreatMissingData=ignore` prevented sparse batch periods from overwriting the useful state. These are PoC rules, not universal or clinical thresholds.",
- "Custom Processing Job kiểm tra 20 feature: standardized mean shift numeric > 0,5 và total variation distance categorical > 0,20. Sáu feature drift. Job publish `DriftDetected=1`, `DataQualityViolationCount=6`; `TreatMissingData=ignore` tránh period batch thưa làm sai trạng thái hữu ích. Đây là quy tắc PoC, không phải ngưỡng phổ quát hay lâm sàng.",
+("Running SageMaker MLOps on USD 200: 13 Budget Decisions", "Chạy SageMaker MLOps với 200 USD: 13 quyết định để không cháy budget",
+ "The submitted article summarizes cost-management lessons from the Heart Risk SageMaker capstone. It explains why resources left running, oversized experiments, missing lifecycle rules, and incomplete cleanup planning can consume a limited student budget.",
+ "Bài đã gửi tổng hợp kinh nghiệm kiểm soát chi phí từ đồ án Heart Risk trên SageMaker, nhấn mạnh rủi ro từ tài nguyên để quên, thí nghiệm quá lớn, thiếu lifecycle rule và kế hoạch cleanup.",
+ "The 13 decisions cover benchmarking small CPU instances, avoiding unnecessary GPUs, using one Region, deleting endpoints after demos, S3 lifecycle rules, reuse of processed data, value-aware retraining, resource tagging, bounded HPO, periodic cleanup, ephemeral Training Jobs, least-privilege IAM, and avoiding an unnecessary NAT Gateway. Cost figures are educational estimates and must be checked against current AWS pricing.",
+ "Mười ba quyết định gồm benchmark CPU instance nhỏ, tránh GPU không cần thiết, dùng một Region, xóa endpoint sau demo, S3 lifecycle, tái sử dụng processed data, retrain theo giá trị, resource tagging, HPO có giới hạn, cleanup định kỳ, Training Job có vòng đời hữu hạn, IAM least privilege và tránh NAT Gateway không cần thiết. Các con số chi phí là ước tính giáo dục và cần đối chiếu giá AWS hiện hành.",
  None)
 ]
 for i, (et, vt, introe, introv, impl_e, impl_v, url) in enumerate(blogs, 1):
@@ -535,8 +535,26 @@ for i, (et, vt, introe, introv, impl_e, impl_v, url) in enumerate(blogs, 1):
 
 **Ý nghĩa minh chứng:** ảnh xác nhận bài đã đăng và Phạm Đình Được được gắn thẻ. Nhãn “Hôm qua” không được dùng làm ngày đã xác minh."""
     else:
-        status_en = "- **Status:** Draft — no publication claim or URL"
-        status_vi = "- **Trạng thái:** Bản nháp — chưa tuyên bố xuất bản và chưa có URL"
+        status_en = """- **Status:** **Pending approval**
+- **Public URL:** Not available while the community post is awaiting approval
+- **Submission evidence:** the supplied Facebook screenshot displays the article title and identifies Đoàn Mạnh Tất, Nguyễn Châu, and Phạm Đình Được
+
+<figure class="evidence">
+  <img src="../../images/evidence/blogs/blog3-facebook-pending-review.jpg" alt="Facebook submission awaiting approval for the SageMaker MLOps budget article" loading="lazy">
+  <figcaption>Blog 3 submitted to AWS Study Group VN and awaiting approval — <code>blog3-facebook-pending-review.jpg</code></figcaption>
+</figure>
+
+The screenshot proves submission, not public publication."""
+        status_vi = """- **Trạng thái:** **Chờ duyệt**
+- **URL công khai:** Chưa có trong thời gian bài viết đang chờ cộng đồng phê duyệt
+- **Minh chứng gửi bài:** ảnh Facebook hiển thị tiêu đề bài viết và tên Đoàn Mạnh Tất, Nguyễn Châu, Phạm Đình Được
+
+<figure class="evidence">
+  <img src="../../../images/evidence/blogs/blog3-facebook-pending-review.jpg" alt="Bài viết ngân sách SageMaker MLOps đang chờ duyệt trên Facebook" loading="lazy">
+  <figcaption>Blog 3 đã gửi AWS Study Group VN và đang chờ duyệt — <code>blog3-facebook-pending-review.jpg</code></figcaption>
+</figure>
+
+Ảnh xác nhận bài đã được gửi, không khẳng định bài đã xuất bản công khai."""
     common_end_en = f"""## Result and lessons
 
 The implementation favors measurable evidence, explicit failure behavior, and cost-aware operation. IAM roles replace hard-coded keys; active URLs and sensitive ARNs must be masked.
@@ -559,39 +577,81 @@ Giải pháp ưu tiên minh chứng đo được, hành vi lỗi rõ ràng và v
 pair(CONTENT / "4-EventParticipated", "Events Participated", "Sự kiện đã tham gia", 4, "4.",
 """# Events participated
 
-No verified event information was supplied. The placeholder page below prevents the sample event from being presented as personal experience.""",
+This section records the technical sharing event attended on **25 July 2026** at **Level 26, Bitexco Financial Tower, Ho Chi Minh City**. The session presented Agentic AI, solution architecture, hackathon delivery, computer vision, and conversational-ordering use cases.
+
+The detailed page summarizes the four supplied presentation decks and the lessons connected to the internship project.""",
 """# Sự kiện đã tham gia
 
-Chưa có thông tin sự kiện đã xác minh. Trang placeholder bên dưới bảo đảm sự kiện mẫu không bị trình bày như trải nghiệm cá nhân.""")
-pair(CONTENT / "4-EventParticipated" / "4.1-Event1", "Verified event placeholder", "Thông tin sự kiện chờ xác minh", 1, "4.1.",
-"""# To be completed with verified event information
+Phần này ghi nhận buổi chia sẻ kỹ thuật đã tham gia ngày **25/07/2026** tại **tầng 26, Bitexco Financial Tower, Thành phố Hồ Chí Minh**. Nội dung tập trung vào Agentic AI, solution architecture, hành trình hackathon, computer vision và conversational ordering.
 
-| Field | Value |
-|---|---|
-| Event name | TODO |
-| Date and time | TODO |
-| Location/online platform | TODO |
-| Role | TODO |
-| Organizer | TODO |
-| Main content | TODO |
-| Personal contribution | TODO |
-| Key learning | TODO |
-| Evidence image/video/certificate | TODO |
-| Public link | TODO |""",
-"""# Sẽ hoàn thiện khi có thông tin sự kiện đã xác minh
+Trang chi tiết tổng hợp bốn bộ slide được cung cấp và các bài học liên hệ với dự án thực tập.""")
+event_en = """# Agentic AI and Hackathon Solution Sharing
 
-| Trường | Giá trị |
+## Event information
+
+| Field | Information |
 |---|---|
-| Tên sự kiện | TODO |
-| Ngày và giờ | TODO |
-| Địa điểm/nền tảng online | TODO |
-| Vai trò | TODO |
-| Đơn vị tổ chức | TODO |
-| Nội dung chính | TODO |
-| Đóng góp cá nhân | TODO |
-| Bài học | TODO |
-| Ảnh/video/chứng nhận | TODO |
-| Link công khai | TODO |""")
+| Report title | Agentic AI and Hackathon Solution Sharing |
+| Date | 25 July 2026 |
+| Location | Level 26, Bitexco Financial Tower, Ho Chi Minh City |
+| Participation | In-person attendee |
+| Materials reviewed | Four presentation decks |
+
+The report title is descriptive because an official event name was not included in the supplied notes.
+
+## Session content
+
+### Solution Architect Professional Native App
+
+An AI-native assistant transforms BRD, PRD, SOP, and natural-language requirements into a requirement catalogue, cloud architecture options, Draw.io diagrams, Infrastructure as Code drafts, and cost estimates. The workflow combines a knowledge base, Amazon Bedrock, diagram generation, and AWS pricing data.
+
+### The Hackathon Journey — 3KA
+
+The 24-hour hackathon presentation covered **S.H.E.P.H.E.R.D**, a crowd-density, tracking, congestion-prediction, and operator-alert MVP. The presented stack included YOLO, ByteTrack, Amazon SageMaker, Amazon Bedrock AgentCore, Strands Agent, and React; its constraints included latency, tracking accuracy, camera placement, and cost.
+
+### AI-Powered Conversation Ordering and Signal Scout
+
+The OneTeam Community Day deck presented a KFC conversational-ordering bot agent. Signal Scout supplied another case study for comparing problem framing, architecture communication, and the path from an idea to a demonstrable product.
+
+## Personal learning
+
+As an attendee, I compared the problem–solution–impact storylines and recorded practices applicable to Heart Risk MLOps: begin with user impact, justify agentic workflows, discuss cost/security/latency/failure handling together, reduce hackathon scope to a traceable MVP, and present architecture as a decision flow.
+
+The supplied evidence consists of `SA_Professional_Native_App.pdf`, `Hackathon_Journey_3KA.pdf`, `OneTeam_CommunityDay.pdf`, and `SignalScout 2.pdf`. No public URL or attendance photograph was supplied, so none is claimed."""
+event_vi = """# Chia sẻ giải pháp Agentic AI và hành trình Hackathon
+
+## Thông tin sự kiện
+
+| Trường | Thông tin |
+|---|---|
+| Tên dùng trong báo cáo | Chia sẻ giải pháp Agentic AI và hành trình Hackathon |
+| Ngày tham gia | 25/07/2026 |
+| Địa điểm | Tầng 26, Bitexco Financial Tower, Thành phố Hồ Chí Minh |
+| Hình thức tham gia | Người tham dự trực tiếp |
+| Tài liệu được tìm hiểu | Bốn bộ slide trình bày |
+
+Tên trên là tên mô tả dùng trong báo cáo vì tài liệu được cung cấp không nêu tên chính thức của sự kiện.
+
+## Nội dung chương trình
+
+### Solution Architect Professional Native App
+
+Trợ lý AI-native chuyển BRD, PRD, SOP và yêu cầu ngôn ngữ tự nhiên thành requirement catalogue, phương án kiến trúc cloud, sơ đồ Draw.io, bản nháp Infrastructure as Code và ước tính chi phí. Workflow kết hợp knowledge base, Amazon Bedrock, công cụ sinh sơ đồ và dữ liệu giá AWS.
+
+### The Hackathon Journey — 3KA
+
+Phần hackathon 24 giờ trình bày **S.H.E.P.H.E.R.D**, một MVP phát hiện mật độ đám đông, theo dõi người, dự báo ùn tắc và cảnh báo operator. Stack gồm YOLO, ByteTrack, Amazon SageMaker, Amazon Bedrock AgentCore, Strands Agent và React; các thách thức là latency, tracking accuracy, vị trí camera và chi phí.
+
+### AI-Powered Conversation Ordering và Signal Scout
+
+OneTeam Community Day trình bày KFC conversational-ordering bot agent. Signal Scout cung cấp thêm case study để so sánh cách xác định vấn đề, truyền đạt kiến trúc và chuyển ý tưởng thành sản phẩm có thể demo.
+
+## Bài học cá nhân
+
+Với vai trò người tham dự, tôi so sánh storyline vấn đề–giải pháp–tác động và ghi nhận các thực hành áp dụng cho Heart Risk MLOps: bắt đầu từ tác động người dùng, giải thích lý do dùng agentic workflow, thảo luận chi phí/bảo mật/latency/xử lý lỗi cùng nhau, thu hẹp hackathon thành MVP có thể truy vết và trình bày kiến trúc như một luồng quyết định.
+
+Minh chứng gồm `SA_Professional_Native_App.pdf`, `Hackathon_Journey_3KA.pdf`, `OneTeam_CommunityDay.pdf` và `SignalScout 2.pdf`. Chưa có URL công khai hoặc ảnh tham dự được cung cấp nên báo cáo không tự bổ sung."""
+pair(CONTENT / "4-EventParticipated" / "4.1-Event1", "Agentic AI and Hackathon Solution Sharing", "Chia sẻ giải pháp Agentic AI và hành trình Hackathon", 1, "4.1.", event_en, event_vi)
 
 
 workshop_root_en = f"""# Building and Deploying an End-to-End Heart Attack Risk Prediction System on AWS SageMaker
