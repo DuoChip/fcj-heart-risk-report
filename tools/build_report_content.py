@@ -1690,66 +1690,14 @@ Phần tự đánh giá sử dụng tám tiêu chí có trọng số bằng nhau
 Kết quả nổi bật nhất là khả năng chẩn đoán lỗi tích hợp giữa quy trình ML và các dịch vụ AWS mà vẫn duy trì chất lượng dữ liệu và khả năng truy vết. Các khoảng trống chính không nằm ở kết quả PoC mà ở mức độ sẵn sàng production: Infrastructure as Code, kiểm thử và triển khai tự động, tăng cường bảo mật, cùng hồ sơ teamwork có hệ thống hơn. Đây là các ưu tiên cho vòng phát triển tiếp theo."""
 pair(CONTENT / "6-Self-evaluation", "Self-evaluation", "Tự đánh giá", 6, "6.", self_en, self_vi)
 
-feedback_en = """# Sharing and feedback
+def existing_page_body(path):
+    """Keep manually reviewed narrative pages when regenerating report content."""
+    text = path.read_text(encoding="utf-8")
+    return text.split("---", 2)[2].strip()
 
-## Overall experience and satisfaction
 
-TODO: Add a personal, verified reflection and satisfaction level.
-
-## Most valuable learning
-
-The documented technical learning is the transition from a notebook experiment to traceable managed jobs, manual promotion, operational error handling, drift visibility, and pass/fail automation.
-
-## Mentor/admin support
-
-TODO: Add verified feedback without inventing names, meetings, or benefits.
-
-## Technical and soft-skill growth
-
-The project demonstrates growth in AWS service integration, leakage-aware ML evaluation, IAM/cost hygiene, troubleshooting, and bilingual documentation. TODO: add verified communication/teamwork examples.
-
-## Difficulties
-
-Instance compatibility, missing expected official drift metrics, sparse alarm periods, Pipeline upsert order, and SDK v2 warnings required explicit diagnosis.
-
-## Suggestions for FCAJ
-
-Earlier quota/IAM checklists, a mandatory cost-cleanup checklist, an architecture review before deployment, and a complete bilingual sample could reduce avoidable setup and reporting ambiguity.
-
-## Recommendation and career direction
-
-TODO: State whether you would recommend the program and why.  
-TODO: Add your verified future career direction."""
-feedback_vi = """# Chia sẻ và phản hồi
-
-## Trải nghiệm tổng thể và mức độ hài lòng
-
-TODO: Thêm cảm nhận cá nhân đã xác minh và mức độ hài lòng.
-
-## Bài học giá trị nhất
-
-Bài học kỹ thuật đã ghi nhận là chuyển từ thử nghiệm notebook sang managed job có truy vết, promotion thủ công, xử lý lỗi vận hành, quan sát drift và automation pass/fail.
-
-## Hỗ trợ từ mentor/admin
-
-TODO: Thêm phản hồi đã xác minh, không tự tạo tên, cuộc họp hay phúc lợi.
-
-## Phát triển kỹ thuật và kỹ năng mềm
-
-Dự án thể hiện tiến bộ về tích hợp dịch vụ AWS, đánh giá ML chú ý leakage, IAM/chi phí, troubleshooting và tài liệu song ngữ. TODO: thêm ví dụ giao tiếp/teamwork đã xác minh.
-
-## Khó khăn
-
-Tính tương thích instance, thiếu official drift metric mong đợi, period alarm thưa, thứ tự upsert Pipeline và cảnh báo SDK v2 cần được chẩn đoán rõ.
-
-## Đề xuất cho FCAJ
-
-Checklist quota/IAM sớm, checklist cleanup bắt buộc, review kiến trúc trước deployment và mẫu song ngữ đầy đủ có thể giảm lỗi setup và mơ hồ khi viết báo cáo.
-
-## Khuyến nghị và định hướng nghề nghiệp
-
-TODO: Nêu có giới thiệu chương trình cho bạn bè hay không và lý do.  
-TODO: Thêm định hướng nghề nghiệp đã xác minh."""
+feedback_en = existing_page_body(CONTENT / "7-Feedback" / "_index.md")
+feedback_vi = existing_page_body(CONTENT / "7-Feedback" / "_index.vi.md")
 pair(CONTENT / "7-Feedback", "Sharing and Feedback", "Chia sẻ và phản hồi", 7, "7.", feedback_en, feedback_vi)
 
 
