@@ -12,6 +12,7 @@ pre: " <b></b> "
 | Field | Value |
 |---|---|
 | Full name | Phạm Đình Được |
+| Student ID | 2310761 |
 | Phone number | 036 499 8870 |
 | Email | duoc7090@gmail.com<br>duoc.phamdinh2510@hcmut.edu.vn |
 | University | Ho Chi Minh City University of Technology – Vietnam National University Ho Chi Minh City (HCMUT–VNUHCM) |
