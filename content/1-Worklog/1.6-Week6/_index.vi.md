@@ -5,7 +5,7 @@ chapter: false
 pre: " <b>1.6.</b> "
 ---
 
-**Thời gian:** TODO: Nhập ngày đã xác minh
+**Thời gian:** 20/07/2026 – 26/07/2026
 
 ## Mục tiêu và công việc hoàn thành
 

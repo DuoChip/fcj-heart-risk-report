@@ -5,7 +5,7 @@ chapter: false
 pre: " <b>1.6.</b> "
 ---
 
-**Dates:** TODO: Enter verified week dates
+**Dates:** 20 July 2026 – 26 July 2026
 
 ## Objectives and work completed
 

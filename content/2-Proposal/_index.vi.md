@@ -61,9 +61,9 @@ Sơ đồ kiến trúc do sinh viên tự dựng kết nối workflow SageMaker 
 
 Dataset có 7.000 dòng, 22 cột. Loại `patient_id` còn 20 raw feature và target `heart_attack_risk` (~42% positive). Split phân tầng 70/15/15 tạo 4.900/1.050/1.050 dòng. Preprocessor chỉ fit trên train: numeric median imputation và scaling; categorical most-frequent imputation và one-hot encoding; tạo 36 feature, không còn missing.
 
-## 10. Timeline 12 tuần
+## 10. Timeline 8 tuần
 
-Tuần 1–3 xây nền AWS và processing; 4–6 train, tune, evaluate, register; 7–9 deploy, API, capture; 10–12 monitor, automate, document và chuẩn bị cleanup.
+Tuần 1–3 onboarding, học nền tảng AWS và SageMaker; tuần 4 thiết lập môi trường dự án; tuần 5 xử lý dữ liệu; tuần 6 huấn luyện, đánh giá và đăng ký mô hình; tuần 7 triển khai, API và monitoring; tuần 8 tự động hóa Pipeline và hoàn thiện báo cáo. Thời gian thực hiện từ 15/06/2026 đến 15/08/2026.
 
 ## 11. Ngân sách và kiểm soát chi phí
 

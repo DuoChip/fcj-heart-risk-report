@@ -1,33 +1,33 @@
 ---
-title: "Tuần 7: Endpoint và suy luận trực tiếp"
+title: "Tuần 7: Triển khai mô hình, API và giám sát"
 weight: 7
 chapter: false
 pre: " <b>1.7.</b> "
 ---
 
-**Thời gian:** TODO: Nhập ngày đã xác minh
+**Thời gian:** 27/07/2026 – 02/08/2026
 
 ## Mục tiêu và công việc hoàn thành
 
-Triển khai Model Package version 2 lên `heart-risk-endpoint`, bật 100% Data Capture input/output và gọi endpoint trực tiếp.
-
-## Hoạt động kỹ thuật
-
-Công việc tuân theo các nguyên tắc S3-first, managed job, đặc quyền tối thiểu và khả năng tái lập. Lệnh và tên tài nguyên được trình bày trong workshop.
+- Triển khai Model Package version 2 lên `heart-risk-endpoint` bằng `ml.m5.large` và bật 100% Data Capture input/output.
+- Xây Lambda `heart-risk-api`, cấu hình quyền gọi endpoint tối thiểu và cung cấp `GET /health`, `POST /predict` qua API Gateway.
+- Kiểm tra JSONL capture, chuẩn bị baseline/current data và hiện thực custom Processing fallback khi feature-level metric chính thức không xuất hiện.
+- Publish `DriftDetected`, `DataQualityViolationCount` vào `Custom/HeartRisk` và cấu hình CloudWatch Alarm.
 
 ## Vấn đề và quyết định
 
-- **Vấn đề:** `ml.t3.medium` không được cấu hình package hỗ trợ.
-- **Cách xử lý/quyết định:** Đổi instance triển khai được phép sang `ml.m5.large`.
+- `ml.t3.medium` không được package hỗ trợ nên chuyển sang `ml.m5.large`.
+- Lỗi public được chuẩn hóa để không lộ chi tiết nội bộ hay URL đang hoạt động.
+- Metric batch thưa dùng `TreatMissingData=ignore` để không làm sai trạng thái alarm.
 
 ## Kết quả
 
-Endpoint `ml.m5.large` đạt `InService` và trả đúng contract dự đoán.
+Endpoint đạt `InService`; API trả đúng HTTP 200, 400 và 502. Data Capture ghi nhận traffic thật. Custom monitor phát hiện 6 feature drift, publish metric giá trị 1 và 6; alarm đạt `ALARM`.
 
 ## Minh chứng
 
-Danh mục minh chứng tham chiếu: `W6-01a, W6-01b, W6-02, W6-03`. Các ảnh minh chứng đã được bổ sung vào `static/images/evidence/` và được phân tích tại các trang workshop tương ứng.
+Danh mục: `W6-01a–W6-13`, `W7-01a–W7-05`. Ảnh được trình bày và phân tích trong workshop tương ứng.
 
 ## Nhìn lại và bước tiếp theo
 
-Tuần kế tiếp sử dụng các output có version thay vì phụ thuộc trạng thái notebook thủ công.
+Kết quả triển khai và giám sát là đầu vào để tuần cuối tích hợp Pipeline, kiểm thử quality gate và hoàn thiện báo cáo.

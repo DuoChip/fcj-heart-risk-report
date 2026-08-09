@@ -63,9 +63,9 @@ This student-created architecture diagram connects the offline SageMaker workflo
 
 The 7,000-row dataset has 22 original columns. `patient_id` is excluded, leaving 20 raw features and target `heart_attack_risk` (~42% positive). A stratified 70/15/15 split yields 4,900/1,050/1,050 rows. The preprocessor is fitted only on train: numeric median imputation and scaling, categorical most-frequent imputation and one-hot encoding, producing 36 features with zero missing values.
 
-## 10. Twelve-week timeline
+## 10. Eight-week timeline
 
-Weeks 1–3 establish AWS and data processing; 4–6 train, tune, evaluate, and register; 7–9 deploy, expose, and capture; 10–12 monitor, automate, document, and prepare cleanup.
+Weeks 1–3 cover onboarding, AWS foundations, and SageMaker; week 4 prepares the project environment; week 5 processes data; week 6 trains, evaluates, and registers the model; week 7 deploys the endpoint, API, and monitoring; week 8 automates the Pipeline and completes reporting. The internship runs from 15 June 2026 to 15 August 2026.
 
 ## 11. Budget and controls
 

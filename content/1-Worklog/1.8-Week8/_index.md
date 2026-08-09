@@ -1,33 +1,31 @@
 ---
-title: "Week 8: Lambda and API Gateway"
+title: "Week 8: SageMaker Pipeline and final reporting"
 weight: 8
 chapter: false
 pre: " <b>1.8.</b> "
 ---
 
-**Dates:** TODO: Enter verified week dates
+**Dates:** 3 August 2026 – 15 August 2026
 
 ## Objectives and work completed
 
-Created `heart-risk-api`, configured environment variables and least-privilege endpoint invocation, then exposed `GET /health` and `POST /predict`.
-
-## Technical activities
-
-The work followed the project S3-first, managed-job, least-privilege, and reproducibility conventions. Commands and resource names are documented in the workshop.
+- Integrated preprocessing, training, evaluation, condition, registration, and fail steps into SageMaker Pipeline.
+- Ran pass and intentional-fail executions to verify the quality gate.
+- Reviewed data flow, IAM, cost, and resource lifecycle; organized the bilingual Hugo site, workshop, report, and cleanup runbook.
 
 ## Problem and decision
 
-- **Problem:** Public errors must not reveal internals or active API URLs.
-- **Resolution/decision:** Validated inputs and returned safe structured errors.
+- The Pipeline did not exist before first creation, so definition/upsert precedes list or execute operations.
+- Evidence must be retained before cleanup; deletion is not claimed without verification logs.
 
 ## Result
 
-Verified HTTP 200 health/prediction, 400 missing fields, and controlled 502 downstream failure.
+The successful execution registered Model Package version 3 as `PendingManualApproval`. An AUC threshold of 0.99 reached the fail step and blocked registration by design. From 10–15 August, results were reviewed, documented, and handed over to close the internship.
 
 ## Evidence
 
-Referenced evidence catalog: `W6-04–W6-11`. The referenced sanitized screenshots are now available under `static/images/evidence/` and are analyzed in the corresponding workshop pages.
+Catalog: `W8-01–W8-07`, covering the Pipeline graph, successful execution, passing condition, and intentional failure.
 
-## Reflection and next step
+## Summary
 
-The next week builds on these versioned outputs rather than repeating manual notebook state.
+The eight weeks form one continuous workflow from environment and data preparation through training, deployment, monitoring, automation, and reporting, using versioned outputs instead of manual notebook state.

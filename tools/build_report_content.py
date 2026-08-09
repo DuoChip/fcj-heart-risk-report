@@ -118,9 +118,9 @@ page(CONTENT / "_index.vi.md", "Báo cáo thực tập FCAJ - Heart Risk MLOps",
 
 
 pair(CONTENT / "1-Worklog", "Worklog", "Nhật ký thực tập", 1, "1.",
-"""# Twelve-week worklog
+"""# Eight-week worklog
 
-This worklog records objectives, managed AWS activities, verified technical results, problems, decisions, evidence references, and next steps. Exact calendar dates remain **TODO** until administrative records are supplied.
+This worklog records eight weeks from 15 June 2026 to 15 August 2026.
 
 | Week | Focus |
 |---:|---|
@@ -128,9 +128,9 @@ This worklog records objectives, managed AWS activities, verified technical resu
 | 4–6 | Training, HPO, evaluation, Model Registry |
 | 7–9 | Endpoint, API, Data Capture, monitoring baseline |
 | 10–12 | Custom drift, Pipeline, documentation and planned cleanup |""",
-"""# Nhật ký 12 tuần
+"""# Nhật ký 8 tuần
 
-Nhật ký ghi lại mục tiêu, hoạt động AWS managed, kết quả kỹ thuật đã xác minh, vấn đề, quyết định, tham chiếu minh chứng và bước tiếp theo. Ngày cụ thể giữ ở trạng thái **TODO** cho đến khi có hồ sơ hành chính.
+Nhật ký ghi lại tám tuần thực tập từ 15/06/2026 đến 15/08/2026.
 
 | Tuần | Trọng tâm |
 |---:|---|
@@ -230,11 +230,53 @@ weeks = [
  "TODO: Add cleanup log, deleted-resource verification, and stopped Studio/JupyterLab evidence."),
 ]
 
+# The internship report uses eight worklog periods. The final period includes
+# review, documentation, and handover through the official end date.
+weeks = weeks[:6] + [
+    (
+        "Model deployment, API, and monitoring", "Triển khai mô hình, API và giám sát",
+        "Deployed the approved model, enabled Data Capture, exposed validated Lambda/API Gateway routes, and implemented custom drift monitoring with CloudWatch alarms.",
+        "Triển khai model đã duyệt, bật Data Capture, xây Lambda/API Gateway có validate và hiện thực custom drift monitoring với CloudWatch Alarm.",
+        "The endpoint reached InService; API tests covered 200/400/502; six features drifted and the alarm reached ALARM.",
+        "Endpoint đạt InService; API xử lý đúng 200/400/502; sáu feature drift và alarm đạt ALARM.",
+        "The original instance was unsupported and the expected official feature metric was absent.",
+        "Instance ban đầu không được hỗ trợ và official feature metric mong đợi không xuất hiện.",
+        "Used ml.m5.large and a measurable custom Processing fallback with TreatMissingData=ignore.",
+        "Dùng ml.m5.large và custom Processing fallback có thể đo lường, với TreatMissingData=ignore.",
+        "W6-01a–W6-13, W7-01a–W7-05",
+    ),
+    (
+        "SageMaker Pipeline and final reporting", "SageMaker Pipeline và hoàn thiện báo cáo",
+        "Built and tested pass/fail Pipeline executions, reviewed security and cost, and completed the bilingual workshop, report, cleanup runbook, and handover.",
+        "Xây và kiểm thử Pipeline pass/fail, rà soát bảo mật/chi phí, hoàn thiện workshop song ngữ, báo cáo, runbook cleanup và bàn giao.",
+        "The pass run registered version 3; an AUC threshold of 0.99 blocked registration by design.",
+        "Luồng pass đăng ký version 3; ngưỡng AUC 0,99 chặn đăng ký đúng thiết kế.",
+        "Pipeline creation required upsert ordering, and evidence had to be retained before cleanup.",
+        "Việc tạo Pipeline cần đúng thứ tự upsert và phải lưu minh chứng trước cleanup.",
+        "Upserted before execution and documented only verified resource lifecycle claims.",
+        "Upsert trước khi execute và chỉ tài liệu hóa trạng thái vòng đời tài nguyên đã xác minh.",
+        "W8-01–W8-07",
+    ),
+]
+
+week_dates_en = [
+    "15 June 2026 – 21 June 2026", "22 June 2026 – 28 June 2026",
+    "29 June 2026 – 5 July 2026", "6 July 2026 – 12 July 2026",
+    "13 July 2026 – 19 July 2026", "20 July 2026 – 26 July 2026",
+    "27 July 2026 – 2 August 2026", "3 August 2026 – 15 August 2026",
+]
+week_dates_vi = [
+    "15/06/2026 – 21/06/2026", "22/06/2026 – 28/06/2026",
+    "29/06/2026 – 05/07/2026", "06/07/2026 – 12/07/2026",
+    "13/07/2026 – 19/07/2026", "20/07/2026 – 26/07/2026",
+    "27/07/2026 – 02/08/2026", "03/08/2026 – 15/08/2026",
+]
+
 for i, w in enumerate(weeks, 1):
     en_t, vi_t, work_en, work_vi, result_en, result_vi, problem_en, problem_vi, resolution_en, resolution_vi, evidence = w
     en = f"""# Week {i}: {en_t}
 
-**Dates:** TODO: Enter verified week dates
+**Dates:** {week_dates_en[i - 1]}
 
 ## Objectives and work completed
 
@@ -262,7 +304,7 @@ Referenced evidence catalog: `{evidence}`. The actual screenshot files were not 
 The next week builds on these versioned outputs rather than repeating manual notebook state."""
     vi = f"""# Tuần {i}: {vi_t}
 
-**Thời gian:** TODO: Nhập ngày đã xác minh
+**Thời gian:** {week_dates_vi[i - 1]}
 
 ## Mục tiêu và công việc hoàn thành
 
@@ -349,9 +391,9 @@ The diagram separates offline data/training, online inference, monitoring, and t
 
 The 7,000-row dataset has 22 original columns. `patient_id` is excluded, leaving 20 raw features and target `heart_attack_risk` (~42% positive). A stratified 70/15/15 split yields 4,900/1,050/1,050 rows. The preprocessor is fitted only on train: numeric median imputation and scaling, categorical most-frequent imputation and one-hot encoding, producing 36 features with zero missing values.
 
-## 10. Twelve-week timeline
+## 10. Eight-week timeline
 
-Weeks 1–3 establish AWS and data processing; 4–6 train, tune, evaluate, and register; 7–9 deploy, expose, and capture; 10–12 monitor, automate, document, and prepare cleanup.
+Weeks 1–3 cover onboarding, AWS foundations, and SageMaker; week 4 prepares the project environment; week 5 processes data; week 6 trains, evaluates, and registers the model; week 7 deploys the endpoint, API, and monitoring; week 8 automates the Pipeline and completes reporting.
 
 ## 11. Budget and controls
 
@@ -439,9 +481,9 @@ Sơ đồ tách offline data/training, online inference, monitoring và Pipeline
 
 Dataset có 7.000 dòng, 22 cột. Loại `patient_id` còn 20 raw feature và target `heart_attack_risk` (~42% positive). Split phân tầng 70/15/15 tạo 4.900/1.050/1.050 dòng. Preprocessor chỉ fit trên train: numeric median imputation và scaling; categorical most-frequent imputation và one-hot encoding; tạo 36 feature, không còn missing.
 
-## 10. Timeline 12 tuần
+## 10. Timeline 8 tuần
 
-Tuần 1–3 xây nền AWS và processing; 4–6 train, tune, evaluate, register; 7–9 deploy, API, capture; 10–12 monitor, automate, document và chuẩn bị cleanup.
+Tuần 1–3 onboarding, học nền tảng AWS và SageMaker; tuần 4 thiết lập môi trường dự án; tuần 5 xử lý dữ liệu; tuần 6 huấn luyện, đánh giá và đăng ký mô hình; tuần 7 triển khai, API và monitoring; tuần 8 tự động hóa Pipeline và hoàn thiện báo cáo.
 
 ## 11. Ngân sách và kiểm soát chi phí
 

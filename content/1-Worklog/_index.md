@@ -5,13 +5,13 @@ chapter: false
 pre: " <b>1.</b> "
 ---
 
-# Twelve-week worklog
+# Eight-week worklog
 
-This worklog records objectives, managed AWS activities, verified technical results, problems, decisions, evidence references, and next steps. Exact calendar dates remain **TODO** until administrative records are supplied.
+This worklog records objectives, managed AWS activities, verified technical results, problems, decisions, evidence references, and next steps for the internship from 15 June 2026 to 15 August 2026.
 
 | Week | Focus |
 |---:|---|
-| 1–3 | AWS foundation, data design, managed preprocessing |
-| 4–6 | Training, HPO, evaluation, Model Registry |
-| 7–9 | Endpoint, API, Data Capture, monitoring baseline |
-| 10–12 | Custom drift, Pipeline, documentation and planned cleanup |
+| 1–2 | AWS foundation, data design, managed preprocessing |
+| 3–4 | Training, HPO, evaluation, Model Registry |
+| 5–6 | Endpoint, API Gateway, and Lambda |
+| 7–8 | Data Capture, drift monitoring, Pipeline, and reporting |
